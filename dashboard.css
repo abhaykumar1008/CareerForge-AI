@@ -1,3 +1,8 @@
+:root{
+
+    --primary-color:#4F46E5;
+
+}
 *{
     margin:0;
     padding:0;
@@ -50,5 +55,444 @@ body{
     flex:1;
 
     padding:40px;
+
+}
+
+.cards{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+.card{
+
+    flex:1;
+
+    min-width:220px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.card h3{
+
+    color:#666;
+
+    margin-bottom:15px;
+
+}
+
+.card h2{
+
+    color:#4F46E5;
+
+    font-size:2rem;
+
+}
+
+.activity{
+
+    margin-top:50px;
+
+}
+
+.activity h2{
+
+    margin-bottom:20px;
+
+    color:#333;
+
+}
+
+.activity-list{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.activity-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.activity-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.activity-item span{
+
+    font-size:24px;
+
+}
+.company-widget{
+
+    margin-top:50px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.company-widget h2{
+
+    margin-bottom:20px;
+
+}
+
+.company-widget select{
+
+    padding:10px;
+
+    width:220px;
+
+    margin-right:15px;
+
+}
+
+.company-widget button{
+
+    padding:10px 20px;
+
+    background:#4F46E5;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+#companyResult{
+
+    margin-top:30px;
+
+    line-height:1.8;
+
+}
+.progress-section{
+
+    margin-top:50px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.progress-item{
+
+    margin:25px 0;
+
+}
+
+.progress-item p{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+    font-weight:bold;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:#ddd;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:#4F46E5;
+
+    transition:1s;
+
+}
+.chart-section{
+
+    margin-top:50px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.chart-section h2{
+
+    margin-bottom:20px;
+
+}
+
+#placementChart{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+.profile-section{
+
+    margin-top:40px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.profile-section h2{
+
+    margin-bottom:20px;
+
+}
+
+.profile-card{
+
+    text-align:center;
+
+}
+
+.profile-card img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #4F46E5;
+
+    margin-bottom:15px;
+
+}
+
+.profile-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.profile-card p{
+
+    color:#666;
+
+    margin-bottom:10px;
+
+}
+
+#editProfileBtn{
+
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    background:#4F46E5;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#editProfileBtn:hover{
+
+    background:#3730A3;
+
+}
+.settings-section{
+
+    margin-top:40px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.settings-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+.settings-card label{
+
+    font-weight:bold;
+
+}
+
+#themeColor{
+
+    width:60px;
+
+    height:40px;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+#saveThemeBtn{
+
+    padding:10px 20px;
+
+    background:#4F46E5;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#saveThemeBtn:hover{
+
+    background:#3730A3;
+
+}
+
+.dark-mode{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+body.dark{
+
+    background:#121212;
+
+    color:white;
+
+}
+
+body.dark .sidebar{
+
+    background:#1E1E2F;
+
+}
+
+body.dark .card,
+body.dark .chart-section,
+body.dark .profile-section,
+body.dark .settings-section,
+body.dark .activity-section,
+body.dark .company-widget{
+
+    background:#1F2937;
+
+    color:white;
+
+}
+
+body.dark input,
+body.dark select{
+
+    background:#374151;
+
+    color:white;
+
+    border:1px solid #555;
 
 }
