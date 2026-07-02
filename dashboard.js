@@ -389,3 +389,135 @@ downloadBtn.addEventListener("click", function(){
     doc.save("CareerForge_Report.pdf");
 
 });
+
+const companyData = {
+
+    google:{
+        package:"₹35 LPA",
+        skills:"DSA, System Design, React",
+        rounds:"5",
+        difficulty:"Hard"
+    },
+
+    amazon:{
+        package:"₹28 LPA",
+        skills:"DSA, Java, AWS",
+        rounds:"4",
+        difficulty:"Hard"
+    },
+
+    microsoft:{
+        package:"₹30 LPA",
+        skills:"DSA, C#, Azure",
+        rounds:"4",
+        difficulty:"Medium"
+    },
+
+    infosys:{
+        package:"₹4 LPA",
+        skills:"Java, SQL, Aptitude",
+        rounds:"3",
+        difficulty:"Easy"
+    },
+
+    tcs:{
+        package:"₹3.5 LPA",
+        skills:"Java, SQL",
+        rounds:"3",
+        difficulty:"Easy"
+    }
+
+};
+
+document.getElementById("compareBtn").addEventListener("click",function(){
+
+    const c1=document.getElementById("company1").value;
+
+    const c2=document.getElementById("company2").value;
+
+    const result=document.getElementById("comparisonResult");
+
+    result.innerHTML=`
+
+    <h3>${c1.toUpperCase()} VS ${c2.toUpperCase()}</h3>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+
+            <th>Feature</th>
+
+            <th>${c1}</th>
+
+            <th>${c2}</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Package</td>
+
+            <td>${companyData[c1].package}</td>
+
+            <td>${companyData[c2].package}</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Skills</td>
+
+            <td>${companyData[c1].skills}</td>
+
+            <td>${companyData[c2].skills}</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Rounds</td>
+
+            <td>${companyData[c1].rounds}</td>
+
+            <td>${companyData[c2].rounds}</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Difficulty</td>
+
+            <td>${companyData[c1].difficulty}</td>
+
+            <td>${companyData[c2].difficulty}</td>
+
+        </tr>
+
+    </table>
+
+    `;
+
+});
+const trackerData = {
+
+    applied:15,
+
+    scheduled:8,
+
+    cleared:5,
+
+    offers:2,
+
+    rejected:3
+
+};
+
+document.getElementById("appliedCount").textContent = trackerData.applied;
+
+document.getElementById("scheduledCount").textContent = trackerData.scheduled;
+
+document.getElementById("clearedCount").textContent = trackerData.cleared;
+
+document.getElementById("offerCount").textContent = trackerData.offers;
+
+document.getElementById("rejectCount").textContent = trackerData.rejected;

@@ -130,21 +130,82 @@
             <!-- Company Preparation -->
             <section id="companySection">
 
-                <h2>Company Preparation</h2>
+                <section id="companyComparison">
 
-                <select id="companySelect">
-                    <option value="google">Google</option>
-                    <option value="amazon">Amazon</option>
-                    <option value="microsoft">Microsoft</option>
-                    <option value="infosys">Infosys</option>
-                    <option value="tcs">TCS</option>
-                </select>
+                <h2>Company Comparison</h2>
+
+                <div class="compare-box">
+
+                    <select id="company1">
+
+                        <option value="google">Google</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="microsoft">Microsoft</option>
+                        <option value="infosys">Infosys</option>
+                        <option value="tcs">TCS</option>
+
+                    </select>
+
+                    <span class="vs-text">VS</span>
+
+                    <select id="company2">
+
+                        <option value="google">Google</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="microsoft">Microsoft</option>
+                        <option value="infosys">Infosys</option>
+                        <option value="tcs">TCS</option>
+
+                    </select>
+
+                    <button id="compareBtn">Compare</button>
+
+                </div>
+
+                <div id="comparisonResult"></div>
+
+                </section>
 
                 <button id="companyBtn">
                     Show Details
                 </button>
 
                 <div id="companyResult"></div>
+
+            </section>
+
+            <section id="placementTracker">
+
+                <h2>AI Placement Tracker</h2>
+
+                <div class="tracker-cards">
+
+                    <div class="tracker-card">
+                        <h3>Applied</h3>
+                        <h1 id="appliedCount">15</h1>
+                    </div>
+
+                    <div class="tracker-card">
+                        <h3>Scheduled</h3>
+                        <h1 id="scheduledCount">8</h1>
+                    </div>
+
+                    <div class="tracker-card">
+                        <h3>Cleared</h3>
+                        <h1 id="clearedCount">5</h1>
+                    </div>
+
+                    <div class="tracker-card">
+                        <h3>Offers</h3>
+                        <h1 id="offerCount">2</h1>
+                    </div>
+
+                    <div class="tracker-card">
+                        <h3>Rejected</h3>
+                        <h1 id="rejectCount">3</h1>
+                    </div>
+
+                </div>
 
             </section>
 
