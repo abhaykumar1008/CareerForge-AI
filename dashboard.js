@@ -221,6 +221,8 @@ editBtn.addEventListener("click", function(){
 
         localStorage.setItem("profileName", newName);
 
+        addNotification("Profile updated successfully");
+
     }
 
 });
@@ -253,6 +255,8 @@ saveThemeBtn.addEventListener("click", function(){
 
     localStorage.setItem("themeColor", color);
 
+    addNotification("Theme changed successfully");
+
     alert("Theme Saved Successfully!");
 
 });
@@ -284,5 +288,104 @@ darkModeToggle.addEventListener("change", function(){
         localStorage.setItem("darkMode","disabled");
 
     }
+
+});
+
+const notificationIcon = document.getElementById("notificationIcon");
+
+const notificationPanel = document.getElementById("notificationPanel");
+
+notificationIcon.addEventListener("click", function(){
+
+    notificationPanel.classList.toggle("active");
+
+});
+
+function addNotification(message){
+
+    const list = document.getElementById("notificationList");
+
+    const item = document.createElement("li");
+
+    item.textContent = "🔔 " + message;
+
+    list.prepend(item);
+
+}
+
+const searchInput = document.getElementById("searchInput");
+
+const sections = [
+
+    document.getElementById("resumeSection"),
+
+    document.getElementById("skillSection"),
+
+    document.getElementById("roadmapSection"),
+
+    document.getElementById("companySection"),
+
+    document.getElementById("profileSection"),
+
+    document.getElementById("settingsSection")
+
+];
+
+searchInput.addEventListener("keyup", function(){
+
+    const value = searchInput.value.toLowerCase();
+
+    sections.forEach(function(section){
+
+        if(section.id.toLowerCase().includes(value)){
+
+            section.style.display = "block";
+
+        }else{
+
+            section.style.display = "none";
+
+        }
+
+    });
+
+    if(value === ""){
+
+        sections.forEach(function(section){
+
+            section.style.display = "block";
+
+        });
+
+    }
+
+});
+
+const downloadBtn = document.getElementById("downloadReportBtn");
+
+downloadBtn.addEventListener("click", function(){
+
+    const { jsPDF } = window.jspdf;
+
+    const doc = new jsPDF();
+
+    doc.setFontSize(20);
+    doc.text("CareerForge AI Report",20,20);
+
+    doc.setFontSize(13);
+
+    doc.text("Name : Abhay Kumar",20,40);
+
+    doc.text("ATS Score : 85%",20,55);
+
+    doc.text("Placement Score : 78%",20,70);
+
+    doc.text("Resume Status : Uploaded",20,85);
+
+    doc.text("Target Company : Google",20,100);
+
+    doc.text("Missing Skills : React, SQL",20,115);
+
+    doc.save("CareerForge_Report.pdf");
 
 });

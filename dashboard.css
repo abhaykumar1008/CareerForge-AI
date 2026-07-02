@@ -496,3 +496,279 @@ body.dark select{
     border:1px solid #555;
 
 }
+.top-navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    margin-bottom:30px;
+
+}
+
+.search-box input{
+
+    width:300px;
+
+    padding:10px 15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+.user-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.user-profile img{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+}
+.notification{
+
+    position:relative;
+
+    margin-right:20px;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+}
+
+#notificationCount{
+
+    position:absolute;
+
+    top:-8px;
+
+    right:-8px;
+
+    width:18px;
+
+    height:18px;
+
+    background:red;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:11px;
+
+}
+
+.notification-panel{
+
+    display:none;
+
+    background:white;
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.notification-panel.active{
+
+    display:block;
+
+}
+
+.notification-panel ul{
+
+    list-style:none;
+
+    margin-top:15px;
+
+}
+
+.notification-panel li{
+
+    padding:12px;
+
+    border-bottom:1px solid #eee;
+
+}
+/* ===========================
+   Tablet View
+=========================== */
+
+@media (max-width:992px){
+
+    .dashboard{
+
+        flex-direction:column;
+
+    }
+
+    .sidebar{
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+    .main-content{
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ===========================
+   Mobile View
+=========================== */
+
+@media (max-width:768px){
+
+    .top-navbar{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        align-items:flex-start;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+    .search-box input{
+
+        width:100%;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .user-profile{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+    .chart-section{
+
+        overflow-x:auto;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .sidebar{
+
+        padding:15px;
+
+    }
+
+    .main-content{
+
+        padding:10px;
+
+    }
+
+    .card{
+
+        padding:15px;
+
+    }
+
+    h1,h2{
+
+        font-size:22px;
+
+    }
+
+    button{
+
+        width:100%;
+
+    }
+
+}
+#downloadReportBtn{
+
+    background:#4F46E5;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    margin-bottom:20px;
+
+}
+
+#downloadReportBtn:hover{
+
+    opacity:.9;
+
+}
