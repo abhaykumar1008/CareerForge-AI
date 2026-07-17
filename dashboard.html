@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-
+    <!-- FontAwesome for Notification Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="dashboard.css">
 </head>
 
@@ -14,7 +15,6 @@
     <!-- Notification Panel -->
     <section class="notification-panel" id="notificationPanel">
         <h3>Notifications</h3>
-
         <ul id="notificationList">
             <li>📄 Resume uploaded successfully</li>
             <li>🎯 ATS Score calculated</li>
@@ -24,25 +24,18 @@
 
     <!-- Top Navbar -->
     <header class="top-navbar">
-
         <h2>Dashboard</h2>
-
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="Search...">
         </div>
-
         <div class="user-profile">
-
             <div class="notification">
                 <i class="fa-solid fa-bell" id="notificationIcon"></i>
                 <span id="notificationCount">3</span>
             </div>
-
             <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
             <span>Abhay Kumar</span>
-
         </div>
-
     </header>
 
     <!-- Download Button -->
@@ -52,9 +45,7 @@
 
         <!-- Sidebar -->
         <aside class="sidebar">
-
             <h2>CareerForge AI</h2>
-
             <ul>
                 <li>Dashboard</li>
                 <li>Resume</li>
@@ -63,7 +54,6 @@
                 <li>Companies</li>
                 <li>Logout</li>
             </ul>
-
         </aside>
 
         <!-- Main Content -->
@@ -73,242 +63,201 @@
 
             <!-- Dashboard Cards -->
             <div class="cards">
-
                 <div class="card">
                     <h3>Placement Score</h3>
                     <h2 id="placementScore">75%</h2>
                 </div>
-
                 <div class="card">
                     <h3>ATS Score</h3>
                     <h2 id="atsScore">85/100</h2>
                 </div>
-
                 <div class="card">
                     <h3>Resume Status</h3>
                     <h2 id="resumeStatus">Uploaded</h2>
                 </div>
-
                 <div class="card">
                     <h3>Missing Skills</h3>
                     <h2 id="missingSkills">2</h2>
                 </div>
-
             </div>
 
             <!-- Recent Activity -->
             <section class="activity">
-
                 <h2>Recent Activity</h2>
-
                 <div class="activity-list">
-
                     <div class="activity-item">
                         <span>✅</span>
                         <p>Resume Uploaded Successfully</p>
                     </div>
-
                     <div class="activity-item">
                         <span>📄</span>
                         <p>ATS Resume Score Generated</p>
                     </div>
-
                     <div class="activity-item">
                         <span>🎯</span>
                         <p>Skill Gap Analysis Completed</p>
                     </div>
-
                     <div class="activity-item">
                         <span>🗺️</span>
                         <p>Learning Roadmap Generated</p>
                     </div>
-
                 </div>
-
             </section>
 
             <!-- Company Preparation -->
             <section id="companySection">
-
-                <section id="companyComparison">
-
-                <h2>Company Comparison</h2>
-
-                <div class="compare-box">
-
-                    <select id="company1">
-
-                        <option value="google">Google</option>
-                        <option value="amazon">Amazon</option>
-                        <option value="microsoft">Microsoft</option>
-                        <option value="infosys">Infosys</option>
-                        <option value="tcs">TCS</option>
-
-                    </select>
-
-                    <span class="vs-text">VS</span>
-
-                    <select id="company2">
-
-                        <option value="google">Google</option>
-                        <option value="amazon">Amazon</option>
-                        <option value="microsoft">Microsoft</option>
-                        <option value="infosys">Infosys</option>
-                        <option value="tcs">TCS</option>
-
-                    </select>
-
-                    <button id="compareBtn">Compare</button>
-
-                </div>
-
-                <div id="comparisonResult"></div>
-
-                </section>
-
-                <button id="companyBtn">
-                    Show Details
-                </button>
-
+                <h2>Company Preparation</h2>
+                <select id="companySelect">
+                    <option value="google">Google</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="infosys">Infosys</option>
+                    <option value="tcs">TCS</option>
+                </select>
+                <button id="companyBtn">Show Details</button>
                 <div id="companyResult"></div>
-
             </section>
 
+            <!-- Company Comparison -->
+            <section id="companyComparison">
+                <h2>Company Comparison</h2>
+                <div class="compare-box">
+                    <select id="company1">
+                        <option value="google">Google</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="microsoft">Microsoft</option>
+                        <option value="infosys">Infosys</option>
+                        <option value="tcs">TCS</option>
+                    </select>
+                    <span class="vs-text">VS</span>
+                    <select id="company2">
+                        <option value="google">Google</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="microsoft">Microsoft</option>
+                        <option value="infosys">Infosys</option>
+                        <option value="tcs">TCS</option>
+                    </select>
+                    <button id="compareBtn">Compare</button>
+                </div>
+                <div id="comparisonResult"></div>
+            </section>
+
+            <!-- AI Placement Tracker -->
             <section id="placementTracker">
-
                 <h2>AI Placement Tracker</h2>
-
                 <div class="tracker-cards">
-
                     <div class="tracker-card">
                         <h3>Applied</h3>
                         <h1 id="appliedCount">15</h1>
                     </div>
-
                     <div class="tracker-card">
                         <h3>Scheduled</h3>
                         <h1 id="scheduledCount">8</h1>
                     </div>
-
                     <div class="tracker-card">
                         <h3>Cleared</h3>
                         <h1 id="clearedCount">5</h1>
                     </div>
-
                     <div class="tracker-card">
                         <h3>Offers</h3>
                         <h1 id="offerCount">2</h1>
                     </div>
-
                     <div class="tracker-card">
                         <h3>Rejected</h3>
                         <h1 id="rejectCount">3</h1>
                     </div>
-
                 </div>
-
             </section>
 
-            <!-- Placement Progress -->
+            <!-- Job Application Tracker -->
+            <section id="jobTracker">
+                <h2>Job Application Tracker</h2>
+                <div class="job-form">
+                    <input type="text" id="companyName" placeholder="Company Name">
+                    <input type="date" id="applyDate">
+                    <select id="applicationStatus">
+                        <option value="Applied">Applied</option>
+                        <option value="Interview">Interview</option>
+                        <option value="Selected">Selected</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+                    <button id="addApplicationBtn">Add Application</button>
+                </div>
+                <table id="applicationTable">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic rows will be added here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Placement Readiness -->
             <section class="progress-section">
-
                 <h2>Placement Readiness</h2>
-
                 <div class="progress-item">
                     <p>Skills <span id="skillsValue">80%</span></p>
-
                     <div class="progress-bar">
                         <div class="progress-fill" id="skillsBar"></div>
                     </div>
                 </div>
-
                 <div class="progress-item">
                     <p>Resume <span id="resumeValue">90%</span></p>
-
                     <div class="progress-bar">
                         <div class="progress-fill" id="resumeBar"></div>
                     </div>
                 </div>
-
                 <div class="progress-item">
                     <p>Projects <span id="projectsValue">70%</span></p>
-
                     <div class="progress-bar">
                         <div class="progress-fill" id="projectsBar"></div>
                     </div>
                 </div>
-
                 <div class="progress-item">
                     <p>DSA <span id="dsaValue">60%</span></p>
-
                     <div class="progress-bar">
                         <div class="progress-fill" id="dsaBar"></div>
                     </div>
                 </div>
-
             </section>
 
             <!-- Chart -->
             <section class="chart-section">
-
                 <h2>Placement Analytics</h2>
-
                 <canvas id="placementChart"></canvas>
-
             </section>
 
             <!-- User Profile -->
             <section id="profileSection">
-
                 <h2>User Profile</h2>
-
                 <div class="profile-card">
-
                     <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
-
                     <h3 id="profileName">Abhay Kumar</h3>
-
                     <p>B.Tech CSE (Blockchain)</p>
                     <p>Frontend Developer Aspirant</p>
-
-                    <button id="editProfileBtn">
-                        Edit Profile
-                    </button>
-
+                    <button id="editProfileBtn">Edit Profile</button>
                 </div>
-
             </section>
 
             <!-- Settings -->
             <section id="settingsSection">
-
                 <h2>Settings</h2>
-
                 <div class="settings-card">
-
-                    <label for="themeColor">
-                        Choose Theme Color
-                    </label>
-
+                    <label for="themeColor">Choose Theme Color</label>
                     <input type="color" id="themeColor" value="#4F46E5">
-
-                    <button id="saveThemeBtn">
-                        Save Theme
-                    </button>
-
+                    <button id="saveThemeBtn">Save Theme</button>
                 </div>
-
             </section>
 
-            <!-- Dark Mode -->
+            <!-- Dark Mode Toggle -->
             <div class="dark-mode">
-
-                <label for="darkModeToggle">
-                    Dark Mode
-                </label>
-
+                <label for="darkModeToggle">Dark Mode</label>
                 <input type="checkbox" id="darkModeToggle">
-
             </div>
 
         </main>
@@ -317,9 +266,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
     <script src="dashboard.js"></script>
 
 </body>
