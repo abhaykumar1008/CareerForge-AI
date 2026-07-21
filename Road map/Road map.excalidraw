@@ -1,0 +1,52 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "c6KQw0fk0cTOalQDVfi0q",
+      "type": "text",
+      "x": 15,
+      "y": 323.6000061035156,
+      "width": 187.6876678466797,
+      "height": 420,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a3",
+      "roundness": null,
+      "seed": 96374833,
+      "version": 97,
+      "versionNonce": 1867804629,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1784452626018,
+      "link": null,
+      "locked": false,
+      "text": "CareerForge AI\n│\n├── Frontend\n│\n├── Backend\n│\n├── Database\n│\n├── AI Integration\n│\n├── Authentication\n│\n├── File Management\n│\n├── Charts & Analytics\n│\n├── Notifications\n│\n├── Deployment\n│\n└── Version Control",
+      "fontSize": 16,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "CareerForge AI\n│\n├── Frontend\n│\n├── Backend\n│\n├── Database\n│\n├── AI Integration\n│\n├── Authentication\n│\n├── File Management\n│\n├── Charts & Analytics\n│\n├── Notifications\n│\n├── Deployment\n│\n└── Version Control",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff",
+    "lockedMultiSelections": {}
+  },
+  "files": {}
+}

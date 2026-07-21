@@ -521,3 +521,87 @@ document.getElementById("clearedCount").textContent = trackerData.cleared;
 document.getElementById("offerCount").textContent = trackerData.offers;
 
 document.getElementById("rejectCount").textContent = trackerData.rejected;
+
+const addApplicationBtn = document.getElementById("addApplicationBtn");
+const applicationTable = document.querySelector("#applicationTable tbody");
+
+loadApplications();
+
+addApplicationBtn.addEventListener("click", function () {
+
+    const company = document.getElementById("companyName").value;
+    const date = document.getElementById("applyDate").value;
+    const status = document.getElementById("applicationStatus").value;
+
+    if (company === "" || date === "") {
+        alert("Please fill all fields.");
+        return;
+    }
+
+    const application = {
+        company,
+        date,
+        status
+    };
+
+    const applications = JSON.parse(localStorage.getItem("applications")) || [];
+
+    applications.push(application);
+
+    localStorage.setItem("applications", JSON.stringify(applications));
+
+    displayApplication(application);
+
+    document.getElementById("companyName").value = "";
+    document.getElementById("applyDate").value = "";
+
+});
+
+function displayApplication(app){
+
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+        <td>${app.company}</td>
+        <td>${app.date}</td>
+        <td>${app.status}</td>
+    `;
+
+    applicationTable.appendChild(row);
+
+}
+
+function loadApplications(){
+
+    const applications = JSON.parse(localStorage.getItem("applications")) || [];
+
+    applications.forEach(displayApplication);
+
+}
+function updateApplicationStatistics(){
+
+    const applications =
+        JSON.parse(localStorage.getItem("applications")) || [];
+
+    const total = applications.length;
+
+    const interviews = applications.filter(app => app.status === "Interview").length;
+
+    const selected = applications.filter(app => app.status === "Selected").length;
+
+    const rejected = applications.filter(app => app.status === "Rejected").length;
+
+    const success =
+        total === 0 ? 0 : ((selected / total) * 100).toFixed(1);
+
+    document.getElementById("totalApplications").textContent = total;
+
+    document.getElementById("totalInterviews").textContent = interviews;
+
+    document.getElementById("totalSelected").textContent = selected;
+
+    document.getElementById("totalRejected").textContent = rejected;
+
+    document.getElementById("successRate").textContent = success + "%";
+
+}
