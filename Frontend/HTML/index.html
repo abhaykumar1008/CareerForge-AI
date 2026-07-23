@@ -4,138 +4,1130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareerForge AI</title>
-    <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href ="C:\Users\abhay\OneDrive\Desktop\CareerForgeAI\Frontend\CSS\style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <!-- Navbar-->
-     <nav>
-        <h2>CareerForge AI </h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#"></a>Features</li>
-            <li><a href="#"></a>Companies</li>
-            <li><a href="login.html">Login</a></li>
+    <!-- ========================= -->
+    <!-- Navbar Start -->
+    <!-- ========================= -->
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
+                <h2>CareerForge AI</h2>
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html" class="active">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#features">
+                    Features
+                </a>
+            </li>
+
+            <li>
+                <a href="#companies">
+                    Companies
+                </a>
+            </li>
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+
         </ul>
 
-     </nav>
+        <!-- Right Side -->
+        <div class="nav-right">
 
-     <!-- Hero Section -->
-      <section id="hero">
-        <h1> Forge Your Career With AI</h1>
-        <p id="welcome"></p>
-        <p>
-            Analyze your resume, identify skill gaps,
-            practice interviews, and become placement ready.
-        </P>
-        <button id="startBtn">Get Started</button>
-        <button> Analyze Resume</button>
-      </section>
+            <!-- Dark Mode Button (Future Feature) -->
+            <button id="themeToggle" class="theme-btn">
+                🌙
+            </button>
 
-      <!-- Companies Section-->
-       <section id="companySection">
-        <h2>Top Hiring Companies </h2>
-        <div>
-            <div>
-                <h3>Google</h3>
-            </div>
-            <div>
-                <h3>Amazon</h3>
-            </div>
-            <div>
-                <h3>Microsoft</h3>
-            </div>
-            <div>
-                <h3>Infosys</h3>
-            </div>
-            <div>
-                <h3>Wipro</h3>
-            </div>
-            <div>
-                <h3>TCS</h3>
-            </div>
-            <div>
-                <h3>Flipkart</h3>
-            </div>
-        </div>
-       </section>
+            <!-- Login -->
+            <a href="login.html">
+                <button class="login-btn">
+                    Login
+                </button>
+            </a>
 
-      <!-- Dashboard Preview   -->
-       <section id="dashoard">
-        <h2> Placement Dashboard</h2>
+            <!-- Register -->
+            <a href="register.html">
+                <button class="register-btn">
+                    Register
+                </button>
+            </a>
 
-        <div class="dashboard-cards">
-
-            <div class="card">
-                <h3>Readiness Score</h3>
-                <p id="score">78%</p>
-            </div>
-
-            <div class="card">
-                <h3>Skills Completed</h3>
-                <p>HTML, CSS, JavaScript</p>
-            </div>
-
-            <div class="card">
-                <h3>Target Role</h3>
-                <p id="role">Frontend Developer</p>
-            </div>
+            <!-- Mobile Menu -->
+            <button id="menuBtn" class="menu-btn">
+                ☰
+            </button>
 
         </div>
 
-       </section>
+    </nav>
 
-       <!-- Resume Analysis-->
-        <section id="resumeSection">
-            <h2> Resume Analysis</h2>
+    <!-- ========================= -->
+    <!-- Navbar End -->
+    <!-- ========================= -->
 
-            <div class="resume-card">
+    <!-- ========================= -->
+
+
+    <!-- Hero Section Start -->
+    <!-- ========================= -->
+
+    <section id="hero">
+
+        <div class="hero-content">
+
+            <!-- Left Content -->
+            <div class="hero-text">
+
+                <h1>
+                    Forge Your Career With <span>AI</span>
+                </h1>
 
                 <p>
-            Upload your resume and get insights about
-            your skills, projects, and improvement areas.
+                    CareerForge AI is your all-in-one placement preparation platform.
+                    Analyze your resume, identify skill gaps, prepare for top companies,
+                    practice interviews, and become placement-ready with AI-powered guidance.
                 </p>
 
-                <button>Upload Resume</button>
+                <!-- Buttons -->
+                <div class="hero-buttons">
 
-                <div class="resume-score" id="resumeScore">
-            85/100
+                    <a href="login.html">
+                        <button id="startBtn" class="primary-btn">
+                            🚀 Get Started
+                        </button>
+                    </a>
+
+                    <button id="resumeBtn" class="secondary-btn">
+                        📄 Analyze Resume
+                    </button>
+
+                </div>
+
+                <!-- Statistics -->
+                <div class="hero-stats">
+
+                    <div class="stat-card">
+                        <h2>5000+</h2>
+                        <p>Students</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h2>150+</h2>
+                        <p>Companies</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h2>95%</h2>
+                        <p>Placement Success</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h2>24/7</h2>
+                        <p>AI Support</p>
+                    </div>
+
                 </div>
 
             </div>
-        </section>
 
-        <!-- Interview Practice -->
-        <section id="interview">
-            <h2> AI Interview Practice </h2>
-            <div class="interview-card">
-                <p>
-                Practice technical interviews and improve 
-                your confidence before placement.
-                </p>
-                <div class="question-box">
+            <!-- Right Side -->
+            <div class="hero-image">
 
-                    <h3> Sample Question</h3>
-                    <p>
-                        What is the differnce between HTML and CSS?
-                    </p>
-                </div>    
+                <img src="assets/images/hero-image.png"
+                    alt="CareerForge AI">
 
-                <button> Start Practice </button>
-            </div>    
-        </section>
+            </div>
 
-       <!-- Footer -->
-        <footer>
-            <h3>CareerForge AI</h3>
-            <P>
-                Your AI-powered placement preparation partner.
-            </P>
+        </div>
+
+        <!-- Trusted Companies -->
+        <div class="trusted-companies">
+
+            <p>Trusted for preparation by students targeting</p>
+
+            <div class="company-logos">
+
+                <span>Google</span>
+                <span>Microsoft</span>
+                <span>Amazon</span>
+                <span>Adobe</span>
+                <span>Infosys</span>
+                <span>TCS</span>
+
+            </div>
+
+        </div>
+
+        <!-- Scroll Down -->
+        <div class="scroll-down">
+
+            <a href="#features">
+                ↓ Explore Features
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Hero Section End -->
+    <!-- ========================= -->
+
+
+    <!-- ========================= -->
+    <!-- Trusted Companies Start -->
+    <!-- ========================= -->
+
+    <section id="trusted-companies">
+
+        <div class="section-header">
+
+            <h2>Trusted Companies</h2>
 
             <p>
-               © 2026 CareerForge AI. All Right Reserved.
+                Prepare for interviews and placement opportunities at the world's
+                leading technology and consulting companies.
             </p>
-        </footer>
+
+        </div>
+
+        <div class="company-container">
+
+            <div class="company-card">
+                <img src="C:\Users\abhay\OneDrive\Desktop\CareerForgeAI\Frontend\assets\google.jpeg" alt="Google">
+                <h3>Google</h3>
+            </div>
+
+            <div class="company-card">
+                <img src="assets/images/microsoft.png" alt="Microsoft">
+                <h3>Microsoft</h3>
+            </div>
+
+            <div class="company-card">
+                <img src="assets/images/amazon.png" alt="Amazon">
+                <h3>Amazon</h3>
+            </div>
+
+            <div class="company-card">
+                <img src="assets/images/adobe.png" alt="Adobe">
+                <h3>Adobe</h3>
+            </div>
+
+            <div class="company-card">
+                <img src="assets/images/tcs.png" alt="TCS">
+                <h3>TCS</h3>
+            </div>
+
+            <div class="company-card">
+                <img src="assets/images/infosys.png" alt="Infosys">
+                <h3>Infosys</h3>
+            </div>
+
+            <div class="company-card">
+                <img src="assets/images/wipro.png" alt="Wipro">
+                <h3>Wipro</h3>
+            </div>
+
+            <div class="company-card">
+                <img src="assets/images/accenture.png" alt="Accenture">
+                <h3>Accenture</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Trusted Companies End -->
+
+
+    <!-- Why CareerForge AI Start -->
+    <!-- ========================= -->
+
+    <section id="why-careerforge">
+
+        <div class="section-header">
+
+            <h2>Why CareerForge AI?</h2>
+
+            <p>
+                Everything you need to prepare for placements in one intelligent platform.
+                Learn smarter, track your progress, and achieve your dream job.
+            </p>
+
+        </div>
+
+        <div class="features-container">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📄</div>
+
+                <h3>AI Resume Analysis</h3>
+
+                <p>
+                    Upload your resume and receive an ATS score, resume feedback,
+                    and improvement suggestions.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🎯</div>
+
+                <h3>Skill Gap Analysis</h3>
+
+                <p>
+                    Identify missing technical and soft skills required
+                    for your target companies.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🛣️</div>
+
+                <h3>Personalized Learning Roadmap</h3>
+
+                <p>
+                    Follow a structured roadmap based on your career goal,
+                    current skills, and placement readiness.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🏢</div>
+
+                <h3>Company Preparation</h3>
+
+                <p>
+                    Explore company-wise interview questions, hiring process,
+                    required skills, and preparation strategy.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">💻</div>
+
+                <h3>Coding & Interview Practice</h3>
+
+                <p>
+                    Practice DSA, aptitude, HR, and technical interview
+                    questions with AI guidance.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📊</div>
+
+                <h3>Placement Dashboard</h3>
+
+                <p>
+                    Monitor your ATS score, learning progress, certificates,
+                    applications, and placement readiness in one place.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Why CareerForge AI End -->
+    
+    <!-- ========================= -->
+
+
+    <!-- Features Section Start -->
+    <!-- ========================= -->
+
+    <section id="features">
+
+        <div class="section-header">
+
+            <h2>Our Features</h2>
+
+            <p>
+                Discover powerful AI-driven tools designed to help students
+                prepare for placements efficiently and confidently.
+            </p>
+
+        </div>
+
+        <div class="features-grid">
+
+            <!-- Feature 1 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">📄</div>
+
+                <h3>Resume Analysis</h3>
+
+                <p>
+                    Upload your resume and receive ATS score,
+                    detailed feedback, and improvement suggestions.
+                </p>
+
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">🧠</div>
+
+                <h3>AI Skill Gap Analysis</h3>
+
+                <p>
+                    Identify missing technical and soft skills
+                    required for your dream company.
+                </p>
+
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">🛣️</div>
+
+                <h3>Learning Roadmap</h3>
+
+                <p>
+                    Get a personalized learning roadmap
+                    based on your current skills and career goals.
+                </p>
+
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">🏢</div>
+
+                <h3>Company Preparation</h3>
+
+                <p>
+                    Explore company-wise interview process,
+                    hiring pattern, and preparation strategy.
+                </p>
+
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">💻</div>
+
+                <h3>AI Interview Practice</h3>
+
+                <p>
+                    Practice aptitude, HR, and technical
+                    interview questions with AI assistance.
+                </p>
+
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">📊</div>
+
+                <h3>Placement Dashboard</h3>
+
+                <p>
+                    Monitor your placement readiness,
+                    ATS score, applications, and progress.
+                </p>
+
+            </div>
+
+            <!-- Feature 7 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">🏆</div>
+
+                <h3>Certificates</h3>
+
+                <p>
+                    Store, organize, and showcase
+                    all your certificates and achievements.
+                </p>
+
+            </div>
+
+            <!-- Feature 8 -->
+            <div class="feature-card">
+
+                <div class="feature-icon">📈</div>
+
+                <h3>Progress Tracking</h3>
+
+                <p>
+                    Track your daily learning,
+                    completed milestones, and placement journey.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Features Section End -->
+    <!-- ========================= -->
+
+
+    <!-- How It Works Start -->
+    <!-- ========================= -->
+
+    <section id="how-it-works">
+
+        <div class="section-header">
+
+            <h2>How It Works</h2>
+
+            <p>
+                Follow a simple step-by-step process to become placement ready
+                with the help of CareerForge AI.
+            </p>
+
+        </div>
+
+        <div class="steps-container">
+
+            <!-- Step 1 -->
+            <div class="step-card">
+
+                <div class="step-number">01</div>
+
+                <div class="step-icon">👤</div>
+
+                <h3>Create Your Account</h3>
+
+                <p>
+                    Sign up and create your CareerForge AI profile
+                    to begin your placement preparation journey.
+                </p>
+
+            </div>
+
+            <!-- Arrow -->
+            <div class="step-arrow">➡</div>
+
+            <!-- Step 2 -->
+            <div class="step-card">
+
+                <div class="step-number">02</div>
+
+                <div class="step-icon">📄</div>
+
+                <h3>Upload Your Resume</h3>
+
+                <p>
+                    Upload your latest resume and let AI
+                    analyze your profile and ATS score.
+                </p>
+
+            </div>
+
+            <!-- Arrow -->
+            <div class="step-arrow">➡</div>
+
+            <!-- Step 3 -->
+            <div class="step-card">
+
+                <div class="step-number">03</div>
+
+                <div class="step-icon">🎯</div>
+
+                <h3>Identify Skill Gaps</h3>
+
+                <p>
+                    Discover missing technical and soft skills
+                    required for your target companies.
+                </p>
+
+            </div>
+
+            <!-- Arrow -->
+            <div class="step-arrow">➡</div>
+
+            <!-- Step 4 -->
+            <div class="step-card">
+
+                <div class="step-number">04</div>
+
+                <div class="step-icon">🛣️</div>
+
+                <h3>Follow Your Roadmap</h3>
+
+                <p>
+                    Learn through a personalized roadmap,
+                    complete projects, and improve your skills.
+                </p>
+
+            </div>
+
+            <!-- Arrow -->
+            <div class="step-arrow">➡</div>
+
+            <!-- Step 5 -->
+            <div class="step-card">
+
+                <div class="step-number">05</div>
+
+                <div class="step-icon">💼</div>
+
+                <h3>Get Placement Ready</h3>
+
+                <p>
+                    Practice interviews, track your progress,
+                    apply to companies, and achieve your dream job.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- How It Works End -->
+
+    <!-- ========================= -->
+
+
+    <!-- Dashboard Preview Start -->
+    <!-- ========================= -->
+
+    <section id="dashboard-preview">
+
+        <div class="section-header">
+
+            <h2>Dashboard Preview</h2>
+
+            <p>
+                Take a quick look at your personalized dashboard and
+                monitor your complete placement journey in one place.
+            </p>
+
+        </div>
+
+        <div class="dashboard-preview-container">
+
+            <!-- Left Side -->
+            <div class="dashboard-left">
+
+                <div class="dashboard-card">
+
+                    <h3>👋 Welcome Back</h3>
+
+                    <p>Abhay Kumar</p>
+
+                    <span>Frontend Developer Aspirant</span>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>🎯 Placement Readiness</h3>
+
+                    <h2>82%</h2>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>📄 ATS Resume Score</h3>
+
+                    <h2>88 / 100</h2>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>💼 Job Applications</h3>
+
+                    <h2>12 Applied</h2>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="dashboard-right">
+
+                <div class="dashboard-card">
+
+                    <h3>📈 Learning Progress</h3>
+
+                    <p>Java</p>
+                    <progress value="85" max="100"></progress>
+
+                    <p>DSA</p>
+                    <progress value="70" max="100"></progress>
+
+                    <p>Web Development</p>
+                    <progress value="90" max="100"></progress>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <h3>📌 Recent Activity</h3>
+
+                    <ul>
+
+                        <li>✅ Resume Uploaded</li>
+
+                        <li>🎯 ATS Score Generated</li>
+
+                        <li>🏢 Google Preparation Started</li>
+
+                        <li>📚 Java Roadmap Updated</li>
+
+                        <li>🏆 Certificate Added</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CTA Button -->
+        <div class="dashboard-btn">
+
+            <a href="login.html">
+
+                <button class="primary-btn">
+
+                    Explore Dashboard
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Dashboard Preview End -->
+    <!-- ========================= -->
+
+
+    <!-- Testimonials Start -->
+    <!-- ========================= -->
+
+    <section id="testimonials">
+
+        <div class="section-header">
+
+            <h2>What Our Students Say</h2>
+
+            <p>
+                Hear from students who have improved their placement preparation
+                with CareerForge AI.
+            </p>
+
+        </div>
+
+        <div class="testimonial-container">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+
+                <img src="assets/images/student1.jpg" alt="Student">
+
+                <h3>Rahul Sharma</h3>
+
+                <span>B.Tech CSE | IIT Indore</span>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>
+                    CareerForge AI completely changed my placement preparation.
+                    The resume analysis and personalized roadmap helped me
+                    identify my weaknesses and improve quickly.
+                </p>
+
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+
+                <img src="assets/images/student2.jpg" alt="Student">
+
+                <h3>Priya Verma</h3>
+
+                <span>B.Tech IT | SATI Vidisha</span>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>
+                    The company-wise preparation and interview practice gave me
+                    confidence before my interviews. The dashboard made tracking
+                    my progress very easy.
+                </p>
+
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+
+                <img src="assets/images/student3.jpg" alt="Student">
+
+                <h3>Aman Gupta</h3>
+
+                <span>Software Engineer Aspirant</span>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>
+                    I loved the AI-powered skill gap analysis. It suggested
+                    exactly what I needed to learn for my target companies.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Testimonials End -->
+    <!-- ========================= -->
+
+
+    <!-- FAQ Section Start -->
+    <!-- ========================= -->
+
+    <section id="faq">
+
+        <div class="section-header">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <p>
+                Find answers to the most common questions about CareerForge AI.
+            </p>
+
+        </div>
+
+        <div class="faq-container">
+
+            <!-- FAQ 1 -->
+            <div class="faq-card">
+
+                <h3>❓ What is CareerForge AI?</h3>
+
+                <p>
+                    CareerForge AI is an AI-powered placement preparation platform
+                    that helps students improve their resumes, identify skill gaps,
+                    prepare for interviews, and track their placement progress.
+                </p>
+
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-card">
+
+                <h3>❓ Is CareerForge AI free to use?</h3>
+
+                <p>
+                    Yes. The basic features are available for free. Premium
+                    features and advanced AI tools may be introduced in future
+                    versions.
+                </p>
+
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-card">
+
+                <h3>❓ Which companies are supported?</h3>
+
+                <p>
+                    CareerForge AI helps students prepare for companies like
+                    Google, Microsoft, Amazon, TCS, Infosys, Wipro, Accenture,
+                    and many more.
+                </p>
+
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-card">
+
+                <h3>❓ How does Resume Analysis work?</h3>
+
+                <p>
+                    Upload your resume and the system evaluates its ATS score,
+                    identifies missing skills, and provides suggestions to improve
+                    your resume.
+                </p>
+
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-card">
+
+                <h3>❓ Can I track my placement progress?</h3>
+
+                <p>
+                    Yes. Your dashboard displays your learning progress,
+                    placement readiness score, completed roadmaps,
+                    certificates, and job applications.
+                </p>
+
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-card">
+
+                <h3>❓ Can I access CareerForge AI on mobile?</h3>
+
+                <p>
+                    Yes. CareerForge AI is designed to be fully responsive,
+                    allowing you to access it from desktops, tablets,
+                    and smartphones.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FAQ Section End -->
+    <!-- ========================= -->
+
+
+    <!-- Call To Action Start -->
+    <!-- ========================= -->
+
+    <section id="cta">
+
+        <div class="cta-container">
+
+            <h2>
+                Ready to Build Your Dream Career?
+            </h2>
+
+            <p>
+                Join thousands of students who are improving their resumes,
+                mastering in-demand skills, preparing for top companies,
+                and becoming placement-ready with CareerForge AI.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+
+                <a href="register.html">
+                    <button class="primary-btn">
+                        🚀 Get Started Free
+                    </button>
+                </a>
+
+                <a href="login.html">
+                    <button class="secondary-btn">
+                        🔑 Login
+                    </button>
+                </a>
+
+            </div>
+
+            <!-- Quick Statistics -->
+            <div class="cta-stats">
+
+                <div class="stat-box">
+                    <h3>5000+</h3>
+                    <p>Students</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>150+</h3>
+                    <p>Companies</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>1000+</h3>
+                    <p>Resumes Analyzed</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>95%</h3>
+                    <p>Placement Readiness</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Call To Action End -->
+    <!-- ========================= -->
+
+    
+    <!-- Footer Start -->
+    <!-- ========================= -->
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <!-- Company Info -->
+            <div class="footer-section">
+
+                <h2>CareerForge AI</h2>
+
+                <p>
+                    CareerForge AI is an AI-powered placement preparation platform
+                    that helps students build resumes, improve skills,
+                    prepare for interviews, and achieve their dream jobs.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#features">Features</a></li>
+
+                    <li><a href="#companies">Companies</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Platform -->
+            <div class="footer-section">
+
+                <h3>Platform</h3>
+
+                <ul>
+
+                    <li><a href="login.html">Login</a></li>
+
+                    <li><a href="register.html">Register</a></li>
+
+                    <li><a href="#">Dashboard</a></li>
+
+                    <li><a href="#">Roadmap</a></li>
+
+                    <li><a href="#">Companies</a></li>
+
+                    <li><a href="#">Certificates</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-section">
+
+                <h3>Contact Us</h3>
+
+                <p>📧 support@careerforgeai.com</p>
+
+                <p>📞 +91 98765 43210</p>
+
+                <p>📍 India</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <div class="social-links">
+
+                <a href="#">🌐 Website</a>
+
+                <a href="#">💼 LinkedIn</a>
+
+                <a href="#">📘 Facebook</a>
+
+                <a href="#">📷 Instagram</a>
+
+                <a href="#">▶ YouTube</a>
+
+                <a href="#">🐙 GitHub</a>
+
+            </div>
+
+            <p>
+                © 2026 CareerForge AI. All Rights Reserved.
+            </p>
+
+            <button id="backToTop">
+                ⬆ Back to Top
+            </button>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================= -->
+    <!-- Footer End -->
 
     
 </body>
