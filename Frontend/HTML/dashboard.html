@@ -11,298 +11,2058 @@
 </head>
 
 <body>
+    <!-- ========================= -->
+    <!-- Sidebar Start -->
+    <!-- ========================= -->
 
-    <!-- Notification Panel -->
-    <section class="notification-panel" id="notificationPanel">
-        <h3>Notifications</h3>
-        <ul id="notificationList">
-            <li>📄 Resume uploaded successfully</li>
-            <li>🎯 ATS Score calculated</li>
-            <li>🏢 Company Preparation completed</li>
-        </ul>
-    </section>
+    <aside class="sidebar">
 
-    <!-- Top Navbar -->
+        <!-- Logo -->
+
+        <div class="sidebar-logo">
+
+            <h2>CareerForge AI</h2>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="sidebar-menu">
+
+            <ul>
+
+                <li>
+                    <a href="dashboard.html">
+                        🏠 Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        👤 My Profile
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html">
+                        📄 Resume Analysis
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skill-gap.html">
+                        🎯 Skill Gap Analysis
+                    </a>
+                </li>
+
+                <li>
+                    <a href="roadmap.html">
+                        🛣️ Learning Roadmap
+                    </a>
+                </li>
+
+                <li>
+                    <a href="companies.html">
+                        🏢 Company Preparation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="interview.html">
+                        💻 Interview Practice
+                    </a>
+                </li>
+
+                <li>
+                    <a href="applications.html">
+                        💼 Job Applications
+                    </a>
+                </li>
+
+                <li>
+                    <a href="certificates.html">
+                        🏆 Certificates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="reports.html">
+                        📊 Reports
+                    </a>
+                </li>
+
+                <li>
+                    <a href="settings.html">
+                        ⚙ Settings
+                    </a>
+                </li>
+
+                <li>
+                    <a href="logout.html">
+                        🚪 Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <!-- ========================= -->
+    <!-- Sidebar End -->
+
+
+    <!-- ========================= -->
+    <!-- Top Navbar Start -->
+    <!-- ========================= -->
+
     <header class="top-navbar">
-        <h2>Dashboard</h2>
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Search...">
+
+        <!-- Left -->
+
+        <div class="navbar-left">
+
+            <h2>Dashboard</h2>
+
         </div>
-        <div class="user-profile">
-            <div class="notification">
-                <i class="fa-solid fa-bell" id="notificationIcon"></i>
-                <span id="notificationCount">3</span>
+
+        <!-- Center -->
+
+        <div class="navbar-center">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search..."
+                >
+
+                <button id="searchBtn">
+
+                    🔍
+
+                </button>
+
             </div>
-            <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
-            <span>Abhay Kumar</span>
+
         </div>
+
+        <!-- Right -->
+
+        <div class="navbar-right">
+
+            <!-- Notifications -->
+
+            <div class="nav-icon">
+
+                <button id="notificationBtn">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                </button>
+
+                <span class="badge">3</span>
+
+            </div>
+
+            <!-- Messages (Future) -->
+
+            <div class="nav-icon">
+
+                <button id="messageBtn">
+
+                    <i class="fa-solid fa-message"></i>
+
+                </button>
+
+                <span class="badge">2</span>
+
+            </div>
+
+            <!-- Dark Mode -->
+
+            <div class="dark-mode">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="darkModeToggle"
+                    >
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </label>
+
+            </div>
+
+            <!-- Profile -->
+
+            <div class="profile-menu">
+
+                <img
+                    src="assets/images/profile.jpg"
+                    alt="Profile"
+                    class="profile-image"
+                >
+
+                <span class="profile-name">
+
+                    Abhay Kumar
+
+                </span>
+
+                <button id="profileMenuBtn">
+
+                    ▼
+
+                </button>
+
+                <!-- Dropdown -->
+
+                <div class="profile-dropdown">
+
+                    <a href="profile.html">
+
+                        👤 My Profile
+
+                    </a>
+
+                    <a href="settings.html">
+
+                        ⚙ Settings
+
+                    </a>
+
+                    <a href="logout.html">
+
+                        🚪 Logout
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </header>
 
-    <!-- Download Button -->
-    <button id="downloadReportBtn">📄 Download Report</button>
+    <!-- ========================= -->
+    <!-- Top Navbar End -->
+     <!-- ========================= -->
+    <!-- Main Content Start -->
+    <!-- ========================= -->
 
-    <div class="dashboard">
+    <main class="main-content">
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h2>CareerForge AI</h2>
-            <ul>
-                <li>Dashboard</li>
-                <li>Resume</li>
-                <li>Skill Gap</li>
-                <li>Roadmap</li>
-                <li>Companies</li>
-                <li>Logout</li>
-            </ul>
-        </aside>
+        <!-- Welcome Banner -->
 
-        <!-- Main Content -->
-        <main class="content">
+        <section class="welcome-banner">
 
-            <h1 id="welcomeUser"></h1>
+            <div class="welcome-text">
 
-            <!-- Dashboard Cards -->
-            <div class="cards">
-                <div class="card">
-                    <h3>Placement Score</h3>
-                    <h2 id="placementScore">75%</h2>
+                <h2>
+
+                    Welcome Back, Abhay 👋
+
+                </h2>
+
+                <p>
+
+                    Keep learning, complete your roadmap, and
+                    become placement ready.
+
+                </p>
+
+            </div>
+
+            <div class="welcome-image">
+
+                <img
+                    src="assets/images/dashboard-banner.png"
+                    alt="Dashboard Banner"
+                >
+
+            </div>
+
+        </section>
+
+        <!-- Statistics Cards -->
+
+        <section class="stats-cards">
+
+            <div class="stat-card">
+
+                <h3>Placement Score</h3>
+
+                <h2>82%</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>ATS Score</h3>
+
+                <h2>88 / 100</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Applications</h3>
+
+                <h2>12</h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Certificates</h3>
+
+                <h2>8</h2>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- Main Content End -->
+     <!-- ========================= -->
+    <!-- Dashboard Statistics Start -->
+    <!-- ========================= -->
+
+    <section id="dashboardStatistics">
+
+        <div class="section-header">
+
+            <h2>Dashboard Statistics</h2>
+
+            <p>
+                Track your placement progress and performance at a glance.
+            </p>
+
+        </div>
+
+        <div class="statistics-container">
+
+            <!-- ATS Score -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📄
                 </div>
-                <div class="card">
+
+                <div class="stat-content">
+
                     <h3>ATS Score</h3>
-                    <h2 id="atsScore">85/100</h2>
+
+                    <h2 id="atsScore">
+                        85 / 100
+                    </h2>
+
+                    <p>
+                        Resume compatibility score
+                    </p>
+
                 </div>
-                <div class="card">
+
+            </div>
+
+            <!-- Placement Score -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🎯
+                </div>
+
+                <div class="stat-content">
+
+                    <h3>Placement Score</h3>
+
+                    <h2 id="placementScore">
+                        78%
+                    </h2>
+
+                    <p>
+                        Overall placement readiness
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Resume Status -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📑
+                </div>
+
+                <div class="stat-content">
+
                     <h3>Resume Status</h3>
-                    <h2 id="resumeStatus">Uploaded</h2>
+
+                    <h2 id="resumeStatus">
+                        Uploaded
+                    </h2>
+
+                    <p>
+                        Latest resume available
+                    </p>
+
                 </div>
-                <div class="card">
+
+            </div>
+
+            <!-- Missing Skills -->
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🧠
+                </div>
+
+                <div class="stat-content">
+
                     <h3>Missing Skills</h3>
-                    <h2 id="missingSkills">2</h2>
+
+                    <h2 id="missingSkills">
+                        5
+                    </h2>
+
+                    <p>
+                        Skills to improve
+                    </p>
+
                 </div>
+
             </div>
 
-            <!-- Recent Activity -->
-            <section class="activity">
-                <h2>Recent Activity</h2>
-                <div class="activity-list">
-                    <div class="activity-item">
-                        <span>✅</span>
-                        <p>Resume Uploaded Successfully</p>
-                    </div>
-                    <div class="activity-item">
-                        <span>📄</span>
-                        <p>ATS Resume Score Generated</p>
-                    </div>
-                    <div class="activity-item">
-                        <span>🎯</span>
-                        <p>Skill Gap Analysis Completed</p>
-                    </div>
-                    <div class="activity-item">
-                        <span>🗺️</span>
-                        <p>Learning Roadmap Generated</p>
-                    </div>
-                </div>
-            </section>
+            <!-- Profile Completion -->
 
-            <!-- Company Preparation -->
-            <section id="companySection">
-                <h2>Company Preparation</h2>
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    👤
+                </div>
+
+                <div class="stat-content">
+
+                    <h3>Profile Completion</h3>
+
+                    <h2 id="profileCompletion">
+                        90%
+                    </h2>
+
+                    <p>
+                        Complete your profile
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Dashboard Statistics End -->
+     <!-- ========================= -->
+    <!-- Resume Analysis Start -->
+    <!-- ========================= -->
+
+    <section id="resumeAnalysis">
+
+        <div class="section-header">
+
+            <h2>Resume Analysis</h2>
+
+            <p>
+                Upload your resume and track your resume analysis progress.
+            </p>
+
+        </div>
+
+        <div class="resume-container">
+
+            <!-- Upload Resume -->
+
+            <div class="resume-card">
+
+                <h3>Upload Resume</h3>
+
+                <input
+                    type="file"
+                    id="resumeUpload"
+                    accept=".pdf,.doc,.docx"
+                >
+
+                <button id="uploadResumeBtn">
+
+                    Upload Resume
+
+                </button>
+
+            </div>
+
+            <!-- Resume Status -->
+
+            <div class="resume-card">
+
+                <h3>Resume Status</h3>
+
+                <h2 id="resumeStatus">
+
+                    Not Uploaded
+
+                </h2>
+
+                <p>
+
+                    Upload your latest resume for analysis.
+
+                </p>
+
+            </div>
+
+            <!-- ATS Score -->
+
+            <div class="resume-card">
+
+                <h3>ATS Score</h3>
+
+                <h2 id="atsScore">
+
+                    0 / 100
+
+                </h2>
+
+                <p>
+
+                    Your ATS compatibility score will appear here.
+
+                </p>
+
+            </div>
+
+            <!-- AI Suggestions -->
+
+            <div class="resume-card">
+
+                <h3>AI Suggestions</h3>
+
+                <ul id="aiSuggestions">
+
+                    <li>Add more technical skills</li>
+
+                    <li>Improve project descriptions</li>
+
+                    <li>Include certifications</li>
+
+                    <li>Optimize keywords for ATS</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Download Report -->
+
+            <div class="resume-card">
+
+                <h3>Resume Report</h3>
+
+                <button id="downloadReportBtn">
+
+                    Download Report
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Resume Analysis End -->
+     <!-- ========================= -->
+    <!-- Skill Gap Detector Start -->
+    <!-- ========================= -->
+
+    <section id="skillGap">
+
+        <div class="section-header">
+
+            <h2>Skill Gap Detector</h2>
+
+            <p>
+                Compare your current skills with your target company requirements.
+            </p>
+
+        </div>
+
+        <div class="skill-gap-container">
+
+            <!-- Select Company -->
+
+            <div class="skill-card">
+
+                <h3>Select Company</h3>
+
                 <select id="companySelect">
+
+                    <option value="">Choose Company</option>
+
                     <option value="google">Google</option>
+
                     <option value="amazon">Amazon</option>
+
                     <option value="microsoft">Microsoft</option>
+
                     <option value="infosys">Infosys</option>
+
                     <option value="tcs">TCS</option>
+
+                    <option value="wipro">Wipro</option>
+
                 </select>
-                <button id="companyBtn">Show Details</button>
-                <div id="companyResult"></div>
-            </section>
 
-            <!-- Company Comparison -->
-            <section id="companyComparison">
-                <h2>Company Comparison</h2>
-                <div class="compare-box">
-                    <select id="company1">
-                        <option value="google">Google</option>
-                        <option value="amazon">Amazon</option>
-                        <option value="microsoft">Microsoft</option>
-                        <option value="infosys">Infosys</option>
-                        <option value="tcs">TCS</option>
-                    </select>
-                    <span class="vs-text">VS</span>
-                    <select id="company2">
-                        <option value="google">Google</option>
-                        <option value="amazon">Amazon</option>
-                        <option value="microsoft">Microsoft</option>
-                        <option value="infosys">Infosys</option>
-                        <option value="tcs">TCS</option>
-                    </select>
-                    <button id="compareBtn">Compare</button>
-                </div>
-                <div id="comparisonResult"></div>
-            </section>
-
-            <!-- AI Placement Tracker -->
-            <section id="placementTracker">
-                <h2>AI Placement Tracker</h2>
-                <div class="tracker-cards">
-                    <div class="tracker-card">
-                        <h3>Applied</h3>
-                        <h1 id="appliedCount">15</h1>
-                    </div>
-                    <div class="tracker-card">
-                        <h3>Scheduled</h3>
-                        <h1 id="scheduledCount">8</h1>
-                    </div>
-                    <div class="tracker-card">
-                        <h3>Cleared</h3>
-                        <h1 id="clearedCount">5</h1>
-                    </div>
-                    <div class="tracker-card">
-                        <h3>Offers</h3>
-                        <h1 id="offerCount">2</h1>
-                    </div>
-                    <div class="tracker-card">
-                        <h3>Rejected</h3>
-                        <h1 id="rejectCount">3</h1>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Job Application Tracker -->
-            <section id="jobTracker">
-                <h2>Job Application Tracker</h2>
-                <section id="applicationStatistics">
-
-                    <h2>Application Statistics</h2>
-
-                    <div class="stats-cards">
-
-                        <div class="stats-card">
-                            <h3>Total Applications</h3>
-                            <h1 id="totalApplications">0</h1>
-                        </div>
-
-                        <div class="stats-card">
-                            <h3>Interviews</h3>
-                            <h1 id="totalInterviews">0</h1>
-                        </div>
-
-                        <div class="stats-card">
-                            <h3>Selected</h3>
-                            <h1 id="totalSelected">0</h1>
-                        </div>
-
-                        <div class="stats-card">
-                            <h3>Rejected</h3>
-                            <h1 id="totalRejected">0</h1>
-                        </div>
-
-                        <div class="stats-card">
-                            <h3>Success Rate</h3>
-                            <h1 id="successRate">0%</h1>
-                        </div>
-
-                    </div>
-
-                </section>
-                <div class="job-form">
-                    <input type="text" id="companyName" placeholder="Company Name">
-                    <input type="date" id="applyDate">
-                    <select id="applicationStatus">
-                        <option value="Applied">Applied</option>
-                        <option value="Interview">Interview</option>
-                        <option value="Selected">Selected</option>
-                        <option value="Rejected">Rejected</option>
-                    </select>
-                    <button id="addApplicationBtn">Add Application</button>
-                </div>
-                <table id="applicationTable">
-                    <thead>
-                        <tr>
-                            <th>Company</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Dynamic rows will be added here -->
-                    </tbody>
-                </table>
-            </section>
-
-            <!-- Placement Readiness -->
-            <section class="progress-section">
-                <h2>Placement Readiness</h2>
-                <div class="progress-item">
-                    <p>Skills <span id="skillsValue">80%</span></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="skillsBar"></div>
-                    </div>
-                </div>
-                <div class="progress-item">
-                    <p>Resume <span id="resumeValue">90%</span></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="resumeBar"></div>
-                    </div>
-                </div>
-                <div class="progress-item">
-                    <p>Projects <span id="projectsValue">70%</span></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="projectsBar"></div>
-                    </div>
-                </div>
-                <div class="progress-item">
-                    <p>DSA <span id="dsaValue">60%</span></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="dsaBar"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Chart -->
-            <section class="chart-section">
-                <h2>Placement Analytics</h2>
-                <canvas id="placementChart"></canvas>
-            </section>
-
-            <!-- User Profile -->
-            <section id="profileSection">
-                <h2>User Profile</h2>
-                <div class="profile-card">
-                    <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
-                    <h3 id="profileName">Abhay Kumar</h3>
-                    <p>B.Tech CSE (Blockchain)</p>
-                    <p>Frontend Developer Aspirant</p>
-                    <button id="editProfileBtn">Edit Profile</button>
-                </div>
-            </section>
-
-            <!-- Settings -->
-            <section id="settingsSection">
-                <h2>Settings</h2>
-                <div class="settings-card">
-                    <label for="themeColor">Choose Theme Color</label>
-                    <input type="color" id="themeColor" value="#4F46E5">
-                    <button id="saveThemeBtn">Save Theme</button>
-                </div>
-            </section>
-
-            <!-- Dark Mode Toggle -->
-            <div class="dark-mode">
-                <label for="darkModeToggle">Dark Mode</label>
-                <input type="checkbox" id="darkModeToggle">
             </div>
 
-        </main>
+            <!-- Current Skills -->
 
-    </div>
+            <div class="skill-card">
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="dashboard.js"></script>
+                <h3>Current Skills</h3>
 
+                <ul id="currentSkills">
+
+                    <li>HTML</li>
+
+                    <li>CSS</li>
+
+                    <li>JavaScript</li>
+
+                    <li>Java</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Missing Skills -->
+
+            <div class="skill-card">
+
+                <h3>Missing Skills</h3>
+
+                <ul id="missingSkills">
+
+                    <li>React.js</li>
+
+                    <li>Node.js</li>
+
+                    <li>SQL</li>
+
+                    <li>Git & GitHub</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Improvement Suggestions -->
+
+            <div class="skill-card">
+
+                <h3>Improvement Suggestions</h3>
+
+                <ul id="improvementSuggestions">
+
+                    <li>Complete React.js Course</li>
+
+                    <li>Build Full Stack Projects</li>
+
+                    <li>Practice SQL Daily</li>
+
+                    <li>Improve DSA Problem Solving</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Skill Gap Detector End -->
+     <!-- ========================= -->
+    <!-- Learning Roadmap Start -->
+    <!-- ========================= -->
+
+    <section id="learningRoadmap">
+
+        <div class="section-header">
+
+            <h2>Learning Roadmap</h2>
+
+            <p>
+                Follow your personalized learning path and track your progress.
+            </p>
+
+        </div>
+
+        <div class="roadmap-container">
+
+            <!-- Beginner -->
+
+            <div class="roadmap-card">
+
+                <h3>🟢 Beginner</h3>
+
+                <ul>
+
+                    <li>HTML & CSS</li>
+
+                    <li>JavaScript Basics</li>
+
+                    <li>Git & GitHub</li>
+
+                    <li>Programming Fundamentals</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Intermediate -->
+
+            <div class="roadmap-card">
+
+                <h3>🟡 Intermediate</h3>
+
+                <ul>
+
+                    <li>React.js</li>
+
+                    <li>Node.js & Express</li>
+
+                    <li>MySQL</li>
+
+                    <li>REST APIs</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Advanced -->
+
+            <div class="roadmap-card">
+
+                <h3>🔴 Advanced</h3>
+
+                <ul>
+
+                    <li>System Design</li>
+
+                    <li>Cloud Deployment</li>
+
+                    <li>Docker</li>
+
+                    <li>CI/CD</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Progress -->
+
+            <div class="roadmap-card">
+
+                <h3>Progress</h3>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="roadmapProgressBar"
+                    >
+
+                        65%
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Completion -->
+
+            <div class="roadmap-card">
+
+                <h3>Completion</h3>
+
+                <h2 id="roadmapCompletion">
+
+                    65%
+
+                </h2>
+
+                <p>
+
+                    Keep learning to complete your roadmap.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Learning Roadmap End -->
+     <!-- ========================= -->
+    <!-- Company Preparation Start -->
+    <!-- ========================= -->
+
+    <section id="companyPreparation">
+
+        <div class="section-header">
+
+            <h2>Company Preparation</h2>
+
+            <p>
+                Prepare for your dream company with personalized guidance and resources.
+            </p>
+
+        </div>
+
+        <div class="company-container">
+
+            <!-- Select Company -->
+
+            <div class="company-card">
+
+                <h3>Select Company</h3>
+
+                <select id="selectedCompany">
+
+                    <option value="">Choose Company</option>
+
+                    <option value="google">Google</option>
+
+                    <option value="amazon">Amazon</option>
+
+                    <option value="microsoft">Microsoft</option>
+
+                    <option value="infosys">Infosys</option>
+
+                    <option value="tcs">TCS</option>
+
+                    <option value="wipro">Wipro</option>
+
+                </select>
+
+            </div>
+
+            <!-- Required Skills -->
+
+            <div class="company-card">
+
+                <h3>Required Skills</h3>
+
+                <ul id="requiredSkills">
+
+                    <li>Data Structures & Algorithms</li>
+
+                    <li>Object-Oriented Programming</li>
+
+                    <li>DBMS</li>
+
+                    <li>Operating Systems</li>
+
+                    <li>Computer Networks</li>
+
+                    <li>SQL</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Interview Process -->
+
+            <div class="company-card">
+
+                <h3>Interview Process</h3>
+
+                <ol id="interviewProcess">
+
+                    <li>Online Assessment</li>
+
+                    <li>Technical Interview</li>
+
+                    <li>Coding Round</li>
+
+                    <li>HR Interview</li>
+
+                </ol>
+
+            </div>
+
+            <!-- Preparation Tips -->
+
+            <div class="company-card">
+
+                <h3>Preparation Tips</h3>
+
+                <ul id="preparationTips">
+
+                    <li>Practice DSA every day.</li>
+
+                    <li>Revise core CS subjects.</li>
+
+                    <li>Build strong projects.</li>
+
+                    <li>Solve previous interview questions.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Resources -->
+
+            <div class="company-card">
+
+                <h3>Resources</h3>
+
+                <ul id="companyResources">
+
+                    <li><a href="#">DSA Practice Sheet</a></li>
+
+                    <li><a href="#">Interview Questions</a></li>
+
+                    <li><a href="#">Aptitude Preparation</a></li>
+
+                    <li><a href="#">Mock Interview</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Company Preparation End -->
+    <!-- ========================= -->
+    <!-- Company Comparison Start -->
+    <!-- ========================= -->
+
+    <section id="companyComparison">
+
+        <div class="section-header">
+
+            <h2>Company Comparison</h2>
+
+            <p>
+                Compare two companies based on package, skills, interview process, and hiring details.
+            </p>
+
+        </div>
+
+        <div class="comparison-container">
+
+            <!-- Company Selection -->
+
+            <div class="comparison-selection">
+
+                <div class="company-select">
+
+                    <label for="companyA">
+
+                        Company A
+
+                    </label>
+
+                    <select id="companyA">
+
+                        <option value="">Select Company</option>
+
+                        <option value="google">Google</option>
+
+                        <option value="amazon">Amazon</option>
+
+                        <option value="microsoft">Microsoft</option>
+
+                        <option value="infosys">Infosys</option>
+
+                        <option value="tcs">TCS</option>
+
+                        <option value="wipro">Wipro</option>
+
+                    </select>
+
+                </div>
+
+                <div class="company-select">
+
+                    <label for="companyB">
+
+                        Company B
+
+                    </label>
+
+                    <select id="companyB">
+
+                        <option value="">Select Company</option>
+
+                        <option value="google">Google</option>
+
+                        <option value="amazon">Amazon</option>
+
+                        <option value="microsoft">Microsoft</option>
+
+                        <option value="infosys">Infosys</option>
+
+                        <option value="tcs">TCS</option>
+
+                        <option value="wipro">Wipro</option>
+
+                    </select>
+
+                </div>
+
+                <button id="compareCompaniesBtn">
+
+                    Compare Companies
+
+                </button>
+
+            </div>
+
+            <!-- Comparison Result -->
+
+            <div class="comparison-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Criteria</th>
+
+                            <th id="companyAName">Company A</th>
+
+                            <th id="companyBName">Company B</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Package</td>
+
+                            <td id="packageA">-</td>
+
+                            <td id="packageB">-</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Required Skills</td>
+
+                            <td id="skillsA">-</td>
+
+                            <td id="skillsB">-</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Interview Rounds</td>
+
+                            <td id="roundsA">-</td>
+
+                            <td id="roundsB">-</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Difficulty</td>
+
+                            <td id="difficultyA">-</td>
+
+                            <td id="difficultyB">-</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Hiring Process</td>
+
+                            <td id="processA">-</td>
+
+                            <td id="processB">-</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Company Comparison End -->
+    <!-- ========================= -->
+    <!-- Job Application Tracker Start -->
+    <!-- ========================= -->
+
+    <section id="jobApplicationTracker">
+
+        <div class="section-header">
+
+            <h2>Job Application Tracker</h2>
+
+            <p>
+                Manage and track all your job applications in one place.
+            </p>
+
+        </div>
+
+        <div class="job-tracker-container">
+
+            <!-- Add New Application -->
+
+            <div class="job-form">
+
+                <h3>Add New Application</h3>
+
+                <input
+                    type="text"
+                    id="companyName"
+                    placeholder="Enter Company Name"
+                >
+
+                <input
+                    type="date"
+                    id="applicationDate"
+                >
+
+                <select id="applicationStatus">
+
+                    <option value="">Select Status</option>
+
+                    <option value="Applied">Applied</option>
+
+                    <option value="Assessment">Assessment</option>
+
+                    <option value="Interview">Interview</option>
+
+                    <option value="HR Round">HR Round</option>
+
+                    <option value="Selected">Selected</option>
+
+                    <option value="Rejected">Rejected</option>
+
+                </select>
+
+                <button id="addApplicationBtn">
+
+                    Add Application
+
+                </button>
+
+            </div>
+
+            <!-- Application Table -->
+
+            <div class="application-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Company</th>
+
+                            <th>Applied Date</th>
+
+                            <th>Status</th>
+
+                            <th>Edit</th>
+
+                            <th>Delete</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="applicationTableBody">
+
+                        <tr>
+
+                            <td>Google</td>
+
+                            <td>10-07-2026</td>
+
+                            <td>Interview</td>
+
+                            <td>
+
+                                <button class="edit-btn">
+
+                                    Edit
+
+                                </button>
+
+                            </td>
+
+                            <td>
+
+                                <button class="delete-btn">
+
+                                    Delete
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Job Application Tracker End -->
+     <!-- ========================= -->
+    <!-- Application Statistics Start -->
+    <!-- ========================= -->
+
+    <section id="applicationStatistics">
+
+        <div class="section-header">
+
+            <h2>Application Statistics</h2>
+
+            <p>
+                Track your overall job application performance and placement progress.
+            </p>
+
+        </div>
+
+        <div class="statistics-container">
+
+            <!-- Total Applications -->
+
+            <div class="statistics-card">
+
+                <div class="statistics-icon">
+
+                    📄
+
+                </div>
+
+                <div class="statistics-content">
+
+                    <h3>Total Applications</h3>
+
+                    <h2 id="totalApplications">
+
+                        25
+
+                    </h2>
+
+                    <p>
+
+                        Applications submitted
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Interviews -->
+
+            <div class="statistics-card">
+
+                <div class="statistics-icon">
+
+                    💼
+
+                </div>
+
+                <div class="statistics-content">
+
+                    <h3>Interviews</h3>
+
+                    <h2 id="totalInterviews">
+
+                        10
+
+                    </h2>
+
+                    <p>
+
+                        Interview invitations received
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Selected -->
+
+            <div class="statistics-card">
+
+                <div class="statistics-icon">
+
+                    🎉
+
+                </div>
+
+                <div class="statistics-content">
+
+                    <h3>Selected</h3>
+
+                    <h2 id="totalSelected">
+
+                        4
+
+                    </h2>
+
+                    <p>
+
+                        Successful job offers
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Rejected -->
+
+            <div class="statistics-card">
+
+                <div class="statistics-icon">
+
+                    ❌
+
+                </div>
+
+                <div class="statistics-content">
+
+                    <h3>Rejected</h3>
+
+                    <h2 id="totalRejected">
+
+                        11
+
+                    </h2>
+
+                    <p>
+
+                        Applications not selected
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Success Rate -->
+
+            <div class="statistics-card">
+
+                <div class="statistics-icon">
+
+                    📈
+
+                </div>
+
+                <div class="statistics-content">
+
+                    <h3>Success Rate</h3>
+
+                    <h2 id="successRate">
+
+                        40%
+
+                    </h2>
+
+                    <p>
+
+                        Overall application success
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Application Statistics End -->
+    <!-- ========================= -->
+    <!-- Placement Readiness Start -->
+    <!-- ========================= -->
+
+    <section id="placementReadiness">
+
+        <div class="section-header">
+
+            <h2>Placement Readiness</h2>
+
+            <p>
+                Monitor your overall placement preparation progress across different categories.
+            </p>
+
+        </div>
+
+        <div class="placement-container">
+
+            <!-- Skills Progress -->
+
+            <div class="progress-card">
+
+                <div class="progress-header">
+
+                    <h3>Skills Progress</h3>
+
+                    <span id="skillsProgressValue">
+
+                        80%
+
+                    </span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="skillsProgressBar"
+                        style="width: 80%;"
+                    ></div>
+
+                </div>
+
+            </div>
+
+            <!-- Resume Progress -->
+
+            <div class="progress-card">
+
+                <div class="progress-header">
+
+                    <h3>Resume Progress</h3>
+
+                    <span id="resumeProgressValue">
+
+                        90%
+
+                    </span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="resumeProgressBar"
+                        style="width: 90%;"
+                    ></div>
+
+                </div>
+
+            </div>
+
+            <!-- DSA Progress -->
+
+            <div class="progress-card">
+
+                <div class="progress-header">
+
+                    <h3>DSA Progress</h3>
+
+                    <span id="dsaProgressValue">
+
+                        65%
+
+                    </span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="dsaProgressBar"
+                        style="width: 65%;"
+                    ></div>
+
+                </div>
+
+            </div>
+
+            <!-- Projects Progress -->
+
+            <div class="progress-card">
+
+                <div class="progress-header">
+
+                    <h3>Projects Progress</h3>
+
+                    <span id="projectsProgressValue">
+
+                        75%
+
+                    </span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="projectsProgressBar"
+                        style="width: 75%;"
+                    ></div>
+
+                </div>
+
+            </div>
+
+            <!-- Overall Progress -->
+
+            <div class="overall-progress-card">
+
+                <h3>Overall Placement Readiness</h3>
+
+                <h2 id="overallProgress">
+
+                    78%
+
+                </h2>
+
+                <p>
+
+                    Keep improving your skills to reach 100% placement readiness.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Placement Readiness End -->
+    <!-- ========================= -->
+    <!-- Analytics Start -->
+    <!-- ========================= -->
+
+    <section id="analytics">
+
+        <div class="section-header">
+
+            <h2>Placement Analytics</h2>
+
+            <p>
+                Visualize your placement preparation and application progress.
+            </p>
+
+        </div>
+
+        <div class="analytics-container">
+
+            <!-- Bar Chart -->
+
+            <div class="chart-card">
+
+                <h3>Skills Performance</h3>
+
+                <canvas id="barChart"></canvas>
+
+            </div>
+
+            <!-- Line Chart -->
+
+            <div class="chart-card">
+
+                <h3>Learning Progress</h3>
+
+                <canvas id="lineChart"></canvas>
+
+            </div>
+
+            <!-- Pie Chart -->
+
+            <div class="chart-card">
+
+                <h3>Application Status</h3>
+
+                <canvas id="pieChart"></canvas>
+
+            </div>
+
+        </div>
+
+        <!-- Monthly Progress -->
+
+        <div class="monthly-progress">
+
+            <h3>Monthly Progress</h3>
+
+            <canvas id="monthlyChart"></canvas>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Analytics End -->
+     <!-- ========================= -->
+    <!-- Recent Activity Start -->
+    <!-- ========================= -->
+
+    <section id="recentActivity">
+
+        <div class="section-header">
+
+            <h2>Recent Activity</h2>
+
+            <p>
+                View your latest activities and achievements.
+            </p>
+
+        </div>
+
+        <div class="activity-container">
+
+            <!-- Resume Uploaded -->
+
+            <div class="activity-card">
+
+                <div class="activity-icon">
+
+                    📄
+
+                </div>
+
+                <div class="activity-content">
+
+                    <h3>Resume Uploaded</h3>
+
+                    <p>Your resume was uploaded successfully.</p>
+
+                    <span class="activity-time">
+
+                        Today • 10:30 AM
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- ATS Generated -->
+
+            <div class="activity-card">
+
+                <div class="activity-icon">
+
+                    🎯
+
+                </div>
+
+                <div class="activity-content">
+
+                    <h3>ATS Score Generated</h3>
+
+                    <p>Your ATS score has been calculated.</p>
+
+                    <span class="activity-time">
+
+                        Today • 10:45 AM
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Company Selected -->
+
+            <div class="activity-card">
+
+                <div class="activity-icon">
+
+                    🏢
+
+                </div>
+
+                <div class="activity-content">
+
+                    <h3>Company Selected</h3>
+
+                    <p>You selected Google for preparation.</p>
+
+                    <span class="activity-time">
+
+                        Yesterday • 4:15 PM
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Roadmap Generated -->
+
+            <div class="activity-card">
+
+                <div class="activity-icon">
+
+                    🗺️
+
+                </div>
+
+                <div class="activity-content">
+
+                    <h3>Learning Roadmap Generated</h3>
+
+                    <p>Your personalized learning roadmap is ready.</p>
+
+                    <span class="activity-time">
+
+                        Yesterday • 5:30 PM
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Certificate Added -->
+
+            <div class="activity-card">
+
+                <div class="activity-icon">
+
+                    🏆
+
+                </div>
+
+                <div class="activity-content">
+
+                    <h3>Certificate Added</h3>
+
+                    <p>A new certificate has been added to your profile.</p>
+
+                    <span class="activity-time">
+
+                        2 Days Ago
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Recent Activity End -->
+    <!-- ========================= -->
+    <!-- Profile Start -->
+    <!-- ========================= -->
+
+    <section id="profile">
+
+        <div class="section-header">
+
+            <h2>My Profile</h2>
+
+            <p>
+                Manage your personal information and placement profile.
+            </p>
+
+        </div>
+
+        <div class="profile-container">
+
+            <!-- Profile Card -->
+
+            <div class="profile-card">
+
+                <!-- Profile Photo -->
+
+                <div class="profile-image">
+
+                    <img
+                        src="assets/images/profile.jpg"
+                        alt="Profile Photo"
+                        id="profilePhoto"
+                    >
+
+                </div>
+
+                <!-- Profile Information -->
+
+                <div class="profile-details">
+
+                    <div class="profile-item">
+
+                        <label>Full Name</label>
+
+                        <h3 id="profileName">
+
+                            Abhay Kumar
+
+                        </h3>
+
+                    </div>
+
+                    <div class="profile-item">
+
+                        <label>College</label>
+
+                        <p id="profileCollege">
+
+                            Samrat Ashok Technological Institute
+
+                        </p>
+
+                    </div>
+
+                    <div class="profile-item">
+
+                        <label>Branch</label>
+
+                        <p id="profileBranch">
+
+                            Computer Science & Engineering
+                            (Blockchain Technology)
+
+                        </p>
+
+                    </div>
+
+                    <div class="profile-item">
+
+                        <label>Skills</label>
+
+                        <div
+                            class="skills-list"
+                            id="profileSkills"
+                        >
+
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JavaScript</span>
+
+                            <span>Java</span>
+
+                            <span>SQL</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="profile-item">
+
+                        <label>Target Company</label>
+
+                        <p id="targetCompany">
+
+                            Google
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Edit Profile Button -->
+
+                <div class="profile-actions">
+
+                    <button id="editProfileBtn">
+
+                        Edit Profile
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Profile End -->
+     <!-- ========================= -->
+    <!-- Settings Start -->
+    <!-- ========================= -->
+
+    <section id="settings">
+
+        <div class="section-header">
+
+            <h2>Settings</h2>
+
+            <p>
+                Customize your account preferences and dashboard settings.
+            </p>
+
+        </div>
+
+        <div class="settings-container">
+
+            <!-- Theme -->
+
+            <div class="settings-card">
+
+                <h3>Theme Color</h3>
+
+                <input
+                    type="color"
+                    id="themeColor"
+                    value="#4F46E5"
+                >
+
+            </div>
+
+            <!-- Dark Mode -->
+
+            <div class="settings-card">
+
+                <h3>Dark Mode</h3>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="darkMode"
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <!-- Notifications -->
+
+            <div class="settings-card">
+
+                <h3>Notifications</h3>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="notifications"
+                        checked
+                    >
+
+                    Enable Notifications
+
+                </label>
+
+            </div>
+
+            <!-- Language -->
+
+            <div class="settings-card">
+
+                <h3>Language</h3>
+
+                <select id="language">
+
+                    <option value="en">English</option>
+
+                    <option value="hi">Hindi</option>
+
+                </select>
+
+            </div>
+
+            <!-- Export Data -->
+
+            <div class="settings-card">
+
+                <h3>Export Data</h3>
+
+                <button id="exportDataBtn">
+
+                    Export My Data
+
+                </button>
+
+            </div>
+
+            <!-- Logout -->
+
+            <div class="settings-card">
+
+                <h3>Account</h3>
+
+                <button id="logoutBtn">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Settings End -->
 </body>
 
 </html>
