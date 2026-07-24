@@ -8,22 +8,298 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ========================= -->
+    <!-- Left Section Start -->
+    <!-- ========================= -->
 
-    <div class="login-container">
+    <div class="login-left">
 
-        <h2>Login</h2>
+        <!-- Logo -->
 
-        <input
-            type="text"
-            id="username"
-            placeholder="Enter Your Name"
-        >
+        <div class="login-logo">
 
-        <button id="loginBtn">
-            Login
-        </button>
+            <h1>CareerForge AI</h1>
+
+        </div>
+
+        <!-- Welcome -->
+
+        <div class="login-content">
+
+            <h2>
+                Welcome Back!
+            </h2>
+
+            <p>
+                Continue your placement preparation journey with
+                CareerForge AI. Analyze your resume, improve your
+                skills, prepare for top companies, and achieve
+                your dream job.
+            </p>
+
+        </div>
+
+        <!-- Illustration -->
+
+        <div class="login-image">
+
+            <img
+                src="assets/images/login-image.png"
+                alt="CareerForge AI Login"
+            >
+
+        </div>
+
+        <!-- Platform Highlights -->
+
+        <div class="login-highlights">
+
+            <div class="highlight-item">
+
+                <span>📄</span>
+
+                <p>AI Resume Analysis</p>
+
+            </div>
+
+            <div class="highlight-item">
+
+                <span>🎯</span>
+
+                <p>Skill Gap Detection</p>
+
+            </div>
+
+            <div class="highlight-item">
+
+                <span>🏢</span>
+
+                <p>Company Preparation</p>
+
+            </div>
+
+            <div class="highlight-item">
+
+                <span>💻</span>
+
+                <p>Interview Practice</p>
+
+            </div>
+
+        </div>
+
+        <!-- Quote -->
+
+        <div class="login-quote">
+
+            <p>
+                "Every successful career begins with a single step.
+                Let CareerForge AI guide your journey."
+            </p>
+
+        </div>
 
     </div>
+
+    <!-- ========================= -->
+    <!-- Left Section End -->
+     <!-- ========================= -->
+    <!-- Right Section Start -->
+    <!-- ========================= -->
+
+    <div class="login-right">
+
+        <!-- Login Header -->
+
+        <div class="login-header">
+
+            <h2>Login to Your Account</h2>
+
+            <p>
+                Welcome back! Please login to continue your
+                placement preparation journey.
+            </p>
+
+        </div>
+
+        <!-- User Type -->
+
+        <div class="user-type">
+
+            <h3>Select Login Type</h3>
+
+            <div class="radio-group">
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="userRole"
+                        value="student"
+                        checked
+                    >
+
+                    Student
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="userRole"
+                        value="admin"
+                    >
+
+                    Admin
+
+                </label>
+
+            </div>
+
+        </div>
+
+        <!-- Login Form -->
+
+        <form id="loginForm">
+
+            <!-- Email -->
+
+            <div class="input-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+            <!-- Password -->
+
+            <div class="input-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+            </div>
+
+            <!-- Options -->
+
+            <div class="login-options">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="rememberMe"
+                    >
+
+                    Remember Me
+
+                </label>
+
+                <a href="forgot-password.html">
+
+                    Forgot Password?
+
+                </a>
+
+            </div>
+
+            <!-- Login Button -->
+
+            <button
+                type="submit"
+                id="loginBtn"
+                class="primary-btn"
+            >
+
+                Login
+
+            </button>
+
+        </form>
+
+        <!-- Divider -->
+
+        <div class="divider">
+
+            <span>OR</span>
+
+        </div>
+
+        <!-- Social Login -->
+
+        <div class="social-login">
+
+            <button
+                id="googleBtn"
+                class="social-btn"
+            >
+
+                Continue with Google
+
+            </button>
+
+            <button
+                id="githubBtn"
+                class="social-btn"
+            >
+
+                Continue with GitHub
+
+            </button>
+
+        </div>
+
+        <!-- Register -->
+
+        <div class="register-link">
+
+            <p>
+
+                Don't have an account?
+
+                <a href="register.html">
+
+                    Create Account
+
+                </a>
+
+            </p>
+
+        </div>
+
+        <!-- Back -->
+
+        <div class="back-home">
+
+            <a href="index.html">
+
+                ← Back to Home
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Right Section End -->
 
     <script src="login.js"></script>
 
