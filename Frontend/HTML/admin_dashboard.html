@@ -678,5 +678,2905 @@
 
     <!-- ========================= -->
     <!-- Dashboard Overview End -->
+     <!-- ========================= -->
+    <!-- User Management Start -->
+    <!-- ========================= -->
+
+    <section id="userManagement">
+
+        <div class="section-header">
+
+            <h2>User Management</h2>
+
+            <p>
+                Manage all registered users of CareerForge AI.
+            </p>
+
+        </div>
+
+        <!-- Search & Add User -->
+
+        <div class="user-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchUser"
+                    placeholder="Search User..."
+                >
+
+                <button id="searchUserBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <button id="addUserBtn">
+
+                Add User
+
+            </button>
+
+        </div>
+
+        <!-- User Table -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Photo</th>
+
+                        <th>Name</th>
+
+                        <th>Email</th>
+
+                        <th>College</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="userTableBody">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>
+
+                            <img
+                                src="assets/images/default-profile.png"
+                                alt="User"
+                                class="user-image"
+                            >
+
+                        </td>
+
+                        <td>Abhay Kumar</td>
+
+                        <td>abhay@gmail.com</td>
+
+                        <td>SATI, Vidisha</td>
+
+                        <td>
+
+                            <span class="status active">
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                View
+
+                            </button>
+
+                            <button class="edit-btn">
+
+                                Edit
+
+                            </button>
+
+                            <button class="block-btn">
+
+                                Block
+
+                            </button>
+
+                            <button class="activate-btn">
+
+                                Activate
+
+                            </button>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- User Management End -->
+     <!-- ========================= -->
+    <!-- Admin Management Start -->
+    <!-- ========================= -->
+
+    <section id="adminManagement">
+
+        <div class="section-header">
+
+            <h2>Admin Management</h2>
+
+            <p>
+                Manage administrators, assign roles, and control permissions.
+            </p>
+
+        </div>
+
+        <!-- Search & Add Admin -->
+
+        <div class="admin-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchAdmin"
+                    placeholder="Search Admin..."
+                >
+
+                <button id="searchAdminBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <button id="addAdminBtn">
+
+                Add Admin
+
+            </button>
+
+        </div>
+
+        <!-- Admin List -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Photo</th>
+
+                        <th>Name</th>
+
+                        <th>Email</th>
+
+                        <th>Role</th>
+
+                        <th>Status</th>
+
+                        <th>Permissions</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="adminTableBody">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>
+
+                            <img
+                                src="assets/images/admin.png"
+                                alt="Admin"
+                                class="admin-image"
+                            >
+
+                        </td>
+
+                        <td>John Doe</td>
+
+                        <td>admin@careerforge.ai</td>
+
+                        <td>
+
+                            <span class="role super-admin">
+
+                                Super Admin
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status active">
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="permission-btn">
+
+                                View Permissions
+
+                            </button>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                View
+
+                            </button>
+
+                            <button class="edit-btn">
+
+                                Edit
+
+                            </button>
+
+                            <button class="remove-btn">
+
+                                Remove
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Roles & Permissions -->
+
+        <div class="roles-section">
+
+            <h3>Roles & Permissions</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Role</th>
+
+                        <th>User Management</th>
+
+                        <th>Company Management</th>
+
+                        <th>Job Management</th>
+
+                        <th>Reports</th>
+
+                        <th>Settings</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Super Admin</td>
+
+                        <td>✔</td>
+
+                        <td>✔</td>
+
+                        <td>✔</td>
+
+                        <td>✔</td>
+
+                        <td>✔</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>HR Admin</td>
+
+                        <td>✔</td>
+
+                        <td>✔</td>
+
+                        <td>✔</td>
+
+                        <td>✖</td>
+
+                        <td>✖</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Content Admin</td>
+
+                        <td>✖</td>
+
+                        <td>✔</td>
+
+                        <td>✔</td>
+
+                        <td>✖</td>
+
+                        <td>✖</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Admin Management End -->
+     <!-- ========================= -->
+    <!-- Resume Management Start -->
+    <!-- ========================= -->
+
+    <section id="resumeManagement">
+
+        <div class="section-header">
+
+            <h2>Resume Management</h2>
+
+            <p>
+                View, analyze, and manage all uploaded resumes across the platform.
+            </p>
+
+        </div>
+
+        <!-- Search & Filter -->
+
+        <div class="resume-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchResume"
+                    placeholder="Search by Name or Email..."
+                >
+
+                <button id="searchResumeBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <select id="resumeFilter">
+
+                <option value="">All Status</option>
+
+                <option value="pending">Pending</option>
+
+                <option value="reviewed">Reviewed</option>
+
+                <option value="approved">Approved</option>
+
+                <option value="rejected">Rejected</option>
+
+            </select>
+
+        </div>
+
+        <!-- Resume Table -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Student Name</th>
+
+                        <th>Email</th>
+
+                        <th>Resume</th>
+
+                        <th>ATS Score</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="resumeTableBody">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Abhay Kumar</td>
+
+                        <td>abhay@gmail.com</td>
+
+                        <td>
+
+                            Resume.pdf
+
+                        </td>
+
+                        <td>
+
+                            86 / 100
+
+                        </td>
+
+                        <td>
+
+                            <span class="status approved">
+
+                                Approved
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                Details
+
+                            </button>
+
+                            <button class="ats-btn">
+
+                                ATS Report
+
+                            </button>
+
+                            <button class="download-btn">
+
+                                Download
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Resume Details -->
+
+        <div class="resume-details-card">
+
+            <h3>Resume Details</h3>
+
+            <div id="resumeDetails">
+
+                <p><strong>Name :</strong> Abhay Kumar</p>
+
+                <p><strong>College :</strong> SATI, Vidisha</p>
+
+                <p><strong>Branch :</strong> Computer Science & Engineering</p>
+
+                <p><strong>Skills :</strong> HTML, CSS, JavaScript, Java, SQL</p>
+
+                <p><strong>Projects :</strong> CareerForge AI, Portfolio Website</p>
+
+                <p><strong>Certifications :</strong> NPTEL DBMS, Web Development</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Resume Management End -->
+     <!-- ========================= -->
+    <!-- Company Management Start -->
+    <!-- ========================= -->
+
+    <section id="companyManagement">
+
+        <div class="section-header">
+
+            <h2>Company Management</h2>
+
+            <p>
+                Manage company information, hiring process, required skills, and interview patterns.
+            </p>
+
+        </div>
+
+        <!-- Search & Add Company -->
+
+        <div class="company-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchCompany"
+                    placeholder="Search Company..."
+                >
+
+                <button id="searchCompanyBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <button id="addCompanyBtn">
+
+                Add Company
+
+            </button>
+
+        </div>
+
+        <!-- Company List -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Logo</th>
+
+                        <th>Company</th>
+
+                        <th>Package</th>
+
+                        <th>Location</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="companyTableBody">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>
+
+                            <img
+                                src="assets/images/google.png"
+                                alt="Google"
+                                class="company-logo"
+                            >
+
+                        </td>
+
+                        <td>Google</td>
+
+                        <td>₹30 LPA</td>
+
+                        <td>Bangalore</td>
+
+                        <td>
+
+                            <span class="status active">
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                View
+
+                            </button>
+
+                            <button class="edit-btn">
+
+                                Edit
+
+                            </button>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Company Details -->
+
+        <div class="company-details-card">
+
+            <h3>Company Details</h3>
+
+            <div id="companyDetails">
+
+                <p>
+
+                    <strong>Company :</strong> Google
+
+                </p>
+
+                <p>
+
+                    <strong>Industry :</strong> Product Based
+
+                </p>
+
+                <p>
+
+                    <strong>Head Office :</strong> California, USA
+
+                </p>
+
+                <p>
+
+                    <strong>Eligibility :</strong> B.Tech CSE
+
+                </p>
+
+                <p>
+
+                    <strong>CTC :</strong> ₹30 LPA
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Hiring Process -->
+
+        <div class="company-details-card">
+
+            <h3>Hiring Process</h3>
+
+            <ul id="hiringProcess">
+
+                <li>Online Assessment</li>
+
+                <li>Technical Round 1</li>
+
+                <li>Technical Round 2</li>
+
+                <li>Managerial Round</li>
+
+                <li>HR Round</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Required Skills -->
+
+        <div class="company-details-card">
+
+            <h3>Required Skills</h3>
+
+            <ul id="requiredSkills">
+
+                <li>Data Structures & Algorithms</li>
+
+                <li>Java / C++</li>
+
+                <li>DBMS</li>
+
+                <li>Operating System</li>
+
+                <li>Computer Networks</li>
+
+                <li>OOPs</li>
+
+                <li>SQL</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Interview Pattern -->
+
+        <div class="company-details-card">
+
+            <h3>Interview Pattern</h3>
+
+            <ul id="interviewPattern">
+
+                <li>Coding Questions</li>
+
+                <li>Core CS Subjects</li>
+
+                <li>Project Discussion</li>
+
+                <li>Behavioral Questions</li>
+
+                <li>HR Discussion</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Company Management End -->
+     <!-- ========================= -->
+    <!-- Job Management Start -->
+    <!-- ========================= -->
+
+    <section id="jobManagement">
+
+        <div class="section-header">
+
+            <h2>Job Management</h2>
+
+            <p>
+                Manage job openings, internships, and placement drives for students.
+            </p>
+
+        </div>
+
+        <!-- Search & Add Job -->
+
+        <div class="job-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchJob"
+                    placeholder="Search Job..."
+                >
+
+                <button id="searchJobBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <button id="addJobBtn">
+
+                Add Job
+
+            </button>
+
+        </div>
+
+        <!-- Job Listings -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Company</th>
+
+                        <th>Job Role</th>
+
+                        <th>Location</th>
+
+                        <th>Package</th>
+
+                        <th>Application Deadline</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="jobTableBody">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Google</td>
+
+                        <td>Software Engineer</td>
+
+                        <td>Bangalore</td>
+
+                        <td>₹30 LPA</td>
+
+                        <td>30 Jul 2026</td>
+
+                        <td>
+
+                            <span class="status active">
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                View
+
+                            </button>
+
+                            <button class="edit-btn">
+
+                                Edit
+
+                            </button>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Internship Listings -->
+
+        <div class="job-card">
+
+            <h3>Internship Listings</h3>
+
+            <ul id="internshipList">
+
+                <li>
+
+                    Google Summer Internship
+
+                </li>
+
+                <li>
+
+                    Microsoft Internship Program
+
+                </li>
+
+                <li>
+
+                    Amazon SDE Internship
+
+                </li>
+
+                <li>
+
+                    Infosys Springboard Internship
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Placement Drives -->
+
+        <div class="job-card">
+
+            <h3>Placement Drives</h3>
+
+            <ul id="placementDriveList">
+
+                <li>
+
+                    Google Campus Hiring - August 2026
+
+                </li>
+
+                <li>
+
+                    TCS NQT Drive
+
+                </li>
+
+                <li>
+
+                    Infosys Off-Campus Drive
+
+                </li>
+
+                <li>
+
+                    Wipro Elite Hiring
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Job Management End -->
+     <!-- ========================= -->
+    <!-- Skill Management Start -->
+    <!-- ========================= -->
+
+    <section id="skillManagement">
+
+        <div class="section-header">
+
+            <h2>Skill Management</h2>
+
+            <p>
+                Manage skill categories, individual skills, and company skill mappings.
+            </p>
+
+        </div>
+
+        <!-- Search & Add Skill -->
+
+        <div class="skill-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchSkill"
+                    placeholder="Search Skill..."
+                >
+
+                <button id="searchSkillBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <button id="addSkillBtn">
+
+                Add Skill
+
+            </button>
+
+        </div>
+
+        <!-- Skill Categories -->
+
+        <div class="skill-category-card">
+
+            <h3>Skill Categories</h3>
+
+            <ul id="skillCategories">
+
+                <li>Programming Languages</li>
+
+                <li>Web Development</li>
+
+                <li>Database</li>
+
+                <li>Data Structures & Algorithms</li>
+
+                <li>Operating System</li>
+
+                <li>Computer Networks</li>
+
+                <li>Cloud Computing</li>
+
+                <li>Soft Skills</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Skills Table -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Skill Name</th>
+
+                        <th>Category</th>
+
+                        <th>Level</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="skillTableBody">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Java</td>
+
+                        <td>Programming</td>
+
+                        <td>Intermediate</td>
+
+                        <td>
+
+                            <button class="edit-btn">
+
+                                Edit
+
+                            </button>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Skill Mapping -->
+
+        <div class="skill-mapping-card">
+
+            <h3>Skill Mapping</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Company</th>
+
+                        <th>Required Skills</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="skillMappingTable">
+
+                    <tr>
+
+                        <td>Google</td>
+
+                        <td>
+
+                            Java, DSA, DBMS, OS, CN
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Amazon</td>
+
+                        <td>
+
+                            Java, DSA, SQL, OOPs
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Microsoft</td>
+
+                        <td>
+
+                            C#, DSA, System Design
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Skill Management End -->
+     <!-- ========================= -->
+    <!-- Course Management Start -->
+    <!-- ========================= -->
+
+    <section id="courseManagement">
+
+        <div class="section-header">
+
+            <h2>Course Management</h2>
+
+            <p>
+                Manage courses, learning materials, and roadmap assignments for students.
+            </p>
+
+        </div>
+
+        <!-- Search & Add Course -->
+
+        <div class="course-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchCourse"
+                    placeholder="Search Course..."
+                >
+
+                <button id="searchCourseBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <button id="addCourseBtn">
+
+                Add Course
+
+            </button>
+
+        </div>
+
+        <!-- Course List -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Course Name</th>
+
+                        <th>Category</th>
+
+                        <th>Duration</th>
+
+                        <th>Level</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="courseTableBody">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Java Programming</td>
+
+                        <td>Programming</td>
+
+                        <td>8 Weeks</td>
+
+                        <td>Beginner</td>
+
+                        <td>
+
+                            <span class="status active">
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                View
+
+                            </button>
+
+                            <button class="edit-btn">
+
+                                Edit
+
+                            </button>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Learning Roadmaps -->
+
+        <div class="roadmap-card">
+
+            <h3>Learning Roadmaps</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Roadmap</th>
+
+                        <th>Target Role</th>
+
+                        <th>Courses Included</th>
+
+                        <th>Duration</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="roadmapTableBody">
+
+                    <tr>
+
+                        <td>Frontend Developer</td>
+
+                        <td>Web Developer</td>
+
+                        <td>
+
+                            HTML, CSS, JavaScript, React
+
+                        </td>
+
+                        <td>
+
+                            16 Weeks
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Java Developer</td>
+
+                        <td>Backend Developer</td>
+
+                        <td>
+
+                            Java, Spring Boot, MySQL
+
+                        </td>
+
+                        <td>
+
+                            20 Weeks
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Placement Preparation</td>
+
+                        <td>Software Engineer</td>
+
+                        <td>
+
+                            DSA, DBMS, OS, CN, OOPs
+
+                        </td>
+
+                        <td>
+
+                            24 Weeks
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Course Management End -->
+     <!-- ========================= -->
+    <!-- Certificate Verification Start -->
+    <!-- ========================= -->
+
+    <section id="certificateVerification">
+
+        <div class="section-header">
+
+            <h2>Certificate Verification</h2>
+
+            <p>
+                Review, verify, and manage uploaded certificates submitted by students.
+            </p>
+
+        </div>
+
+        <!-- Search & Filter -->
+
+        <div class="certificate-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchCertificate"
+                    placeholder="Search Certificate..."
+                >
+
+                <button id="searchCertificateBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <select id="certificateFilter">
+
+                <option value="">All Status</option>
+
+                <option value="pending">Pending</option>
+
+                <option value="approved">Approved</option>
+
+                <option value="rejected">Rejected</option>
+
+            </select>
+
+        </div>
+
+        <!-- Pending Certificates -->
+
+        <div class="table-container">
+
+            <h3>Pending Certificates</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Student Name</th>
+
+                        <th>Certificate Name</th>
+
+                        <th>Issuer</th>
+
+                        <th>Upload Date</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="pendingCertificateTable">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Abhay Kumar</td>
+
+                        <td>NPTEL DBMS</td>
+
+                        <td>NPTEL</td>
+
+                        <td>25 Jul 2026</td>
+
+                        <td>
+
+                            <span class="status pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                Details
+
+                            </button>
+
+                            <button class="verify-btn">
+
+                                Verify
+
+                            </button>
+
+                            <button class="reject-btn">
+
+                                Reject
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Approved Certificates -->
+
+        <div class="table-container">
+
+            <h3>Approved Certificates</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Student Name</th>
+
+                        <th>Certificate</th>
+
+                        <th>Verified By</th>
+
+                        <th>Verification Date</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="approvedCertificateTable">
+
+                    <tr>
+
+                        <td>12</td>
+
+                        <td>Rahul Sharma</td>
+
+                        <td>AWS Cloud Practitioner</td>
+
+                        <td>Admin</td>
+
+                        <td>20 Jul 2026</td>
+
+                        <td>
+
+                            <span class="status approved">
+
+                                Approved
+
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Certificate Details -->
+
+        <div class="certificate-details-card">
+
+            <h3>Certificate Details</h3>
+
+            <div id="certificateDetails">
+
+                <p>
+
+                    <strong>Student :</strong> Abhay Kumar
+
+                </p>
+
+                <p>
+
+                    <strong>Certificate :</strong> NPTEL DBMS
+
+                </p>
+
+                <p>
+
+                    <strong>Issuer :</strong> NPTEL
+
+                </p>
+
+                <p>
+
+                    <strong>Issue Date :</strong> 15 Jul 2026
+
+                </p>
+
+                <p>
+
+                    <strong>Certificate ID :</strong> NPTEL-DBMS-2026-001
+
+                </p>
+
+                <p>
+
+                    <strong>Status :</strong> Pending Verification
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Certificate Verification End -->
+     <!-- ========================= -->
+    <!-- Reports & Analytics Start -->
+    <!-- ========================= -->
+
+    <section id="reportsAnalytics">
+
+        <div class="section-header">
+
+            <h2>Reports & Analytics</h2>
+
+            <p>
+                View platform reports, placement insights, resume analytics, and export detailed reports.
+            </p>
+
+        </div>
+
+        <!-- Filter & Export -->
+
+        <div class="reports-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="month"
+                    id="reportMonth"
+                >
+
+                <button id="generateReportBtn">
+
+                    Generate Report
+
+                </button>
+
+            </div>
+
+            <button id="exportReportBtn">
+
+                Export Report
+
+            </button>
+
+        </div>
+
+        <!-- User Growth -->
+
+        <div class="analytics-card">
+
+            <h3>User Growth</h3>
+
+            <canvas id="userGrowthChart"></canvas>
+
+        </div>
+
+        <!-- Placement Statistics -->
+
+        <div class="analytics-card">
+
+            <h3>Placement Statistics</h3>
+
+            <div class="statistics-grid">
+
+                <div class="stat-box">
+
+                    <h4>Total Applications</h4>
+
+                    <p id="totalApplications">
+
+                        1,250
+
+                    </p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h4>Interviews</h4>
+
+                    <p id="totalInterviews">
+
+                        520
+
+                    </p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h4>Selected</h4>
+
+                    <p id="selectedStudents">
+
+                        310
+
+                    </p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h4>Placement Rate</h4>
+
+                    <p id="placementRate">
+
+                        62%
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Company Statistics -->
+
+        <div class="analytics-card">
+
+            <h3>Company Statistics</h3>
+
+            <canvas id="companyChart"></canvas>
+
+        </div>
+
+        <!-- Resume Analytics -->
+
+        <div class="analytics-card">
+
+            <h3>Resume Analytics</h3>
+
+            <canvas id="resumeChart"></canvas>
+
+        </div>
+
+        <!-- Skill Analytics -->
+
+        <div class="analytics-card">
+
+            <h3>Skill Analytics</h3>
+
+            <canvas id="skillChart"></canvas>
+
+        </div>
+
+        <!-- Monthly Reports -->
+
+        <div class="analytics-card">
+
+            <h3>Monthly Reports</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Month</th>
+
+                        <th>Users</th>
+
+                        <th>Placements</th>
+
+                        <th>Companies</th>
+
+                        <th>Resumes</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="monthlyReportTable">
+
+                    <tr>
+
+                        <td>July 2026</td>
+
+                        <td>250</td>
+
+                        <td>48</td>
+
+                        <td>12</td>
+
+                        <td>190</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Reports & Analytics End -->
+     <!-- ========================= -->
+    <!-- Notifications Start -->
+    <!-- ========================= -->
+
+    <section id="notificationManagement">
+
+        <div class="section-header">
+
+            <h2>Notifications</h2>
+
+            <p>
+                Send announcements, placement alerts, interview notifications, and system messages to users.
+            </p>
+
+        </div>
+
+        <!-- Notification Toolbar -->
+
+        <div class="notification-toolbar">
+
+            <button id="sendNotificationBtn">
+
+                Send Notification
+
+            </button>
+
+            <button id="announcementBtn">
+
+                New Announcement
+
+            </button>
+
+        </div>
+
+        <!-- Send Notification -->
+
+        <div class="notification-card">
+
+            <h3>Send Notification</h3>
+
+            <form id="notificationForm">
+
+                <div class="form-group">
+
+                    <label for="notificationType">
+
+                        Notification Type
+
+                    </label>
+
+                    <select id="notificationType">
+
+                        <option>General Notification</option>
+
+                        <option>Announcement</option>
+
+                        <option>Placement Alert</option>
+
+                        <option>Interview Alert</option>
+
+                        <option>System Notification</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="notificationTitle">
+
+                        Title
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="notificationTitle"
+                        placeholder="Enter notification title"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="notificationMessage">
+
+                        Message
+
+                    </label>
+
+                    <textarea
+                        id="notificationMessage"
+                        rows="5"
+                        placeholder="Write your message..."
+                    ></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="notificationAudience">
+
+                        Send To
+
+                    </label>
+
+                    <select id="notificationAudience">
+
+                        <option>All Users</option>
+
+                        <option>Students</option>
+
+                        <option>Admins</option>
+
+                        <option>Selected Users</option>
+
+                    </select>
+
+                </div>
+
+                <button
+                    type="submit"
+                    id="publishNotificationBtn"
+                >
+
+                    Send Notification
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Recent Notifications -->
+
+        <div class="table-container">
+
+            <h3>Recent Notifications</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Type</th>
+
+                        <th>Title</th>
+
+                        <th>Audience</th>
+
+                        <th>Date</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="notificationTableBody">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Placement Alert</td>
+
+                        <td>Google Hiring Drive</td>
+
+                        <td>All Students</td>
+
+                        <td>28 Jul 2026</td>
+
+                        <td>
+
+                            <span class="status sent">
+
+                                Sent
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                View
+
+                            </button>
+
+                            <button class="edit-btn">
+
+                                Edit
+
+                            </button>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Notifications End -->
+     <!-- ========================= -->
+    <!-- Feedback Management Start -->
+    <!-- ========================= -->
+
+    <section id="feedbackManagement">
+
+        <div class="section-header">
+
+            <h2>Feedback Management</h2>
+
+            <p>
+                Review student feedback, bug reports, suggestions, and contact messages.
+            </p>
+
+        </div>
+
+        <!-- Search & Filter -->
+
+        <div class="feedback-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchFeedback"
+                    placeholder="Search Feedback..."
+                >
+
+                <button id="searchFeedbackBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <select id="feedbackFilter">
+
+                <option value="">All Types</option>
+
+                <option value="student">Student Feedback</option>
+
+                <option value="bug">Bug Report</option>
+
+                <option value="suggestion">Suggestion</option>
+
+                <option value="contact">Contact Message</option>
+
+            </select>
+
+        </div>
+
+        <!-- Feedback Table -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Name</th>
+
+                        <th>Email</th>
+
+                        <th>Type</th>
+
+                        <th>Subject</th>
+
+                        <th>Date</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="feedbackTableBody">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Abhay Kumar</td>
+
+                        <td>abhay@gmail.com</td>
+
+                        <td>Bug Report</td>
+
+                        <td>Resume Upload Error</td>
+
+                        <td>28 Jul 2026</td>
+
+                        <td>
+
+                            <span class="status pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                View
+
+                            </button>
+
+                            <button class="reply-btn">
+
+                                Reply
+
+                            </button>
+
+                            <button class="resolve-btn">
+
+                                Resolve
+
+                            </button>
+
+                            <button class="delete-btn">
+
+                                Delete
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Feedback Details -->
+
+        <div class="feedback-details-card">
+
+            <h3>Feedback Details</h3>
+
+            <div id="feedbackDetails">
+
+                <p>
+
+                    <strong>Name :</strong> Abhay Kumar
+
+                </p>
+
+                <p>
+
+                    <strong>Type :</strong> Bug Report
+
+                </p>
+
+                <p>
+
+                    <strong>Subject :</strong> Resume Upload Error
+
+                </p>
+
+                <p>
+
+                    <strong>Message :</strong>
+
+                    Unable to upload PDF resumes larger than 2 MB.
+
+                </p>
+
+                <p>
+
+                    <strong>Status :</strong>
+
+                    Pending Review
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Feedback Management End -->
+     <!-- ========================= -->
+    <!-- Settings Start -->
+    <!-- ========================= -->
+
+    <section id="settingsManagement">
+
+        <div class="section-header">
+
+            <h2>System Settings</h2>
+
+            <p>
+                Configure platform settings, security, roles, backups, and system preferences.
+            </p>
+
+        </div>
+
+        <!-- Theme Settings -->
+
+        <div class="settings-card">
+
+            <h3>Theme</h3>
+
+            <div class="setting-item">
+
+                <label for="themeMode">
+
+                    Dark Mode
+
+                </label>
+
+                <input
+                    type="checkbox"
+                    id="themeMode"
+                >
+
+            </div>
+
+            <div class="setting-item">
+
+                <label for="primaryColor">
+
+                    Primary Color
+
+                </label>
+
+                <input
+                    type="color"
+                    id="primaryColor"
+                >
+
+            </div>
+
+        </div>
+
+        <!-- Profile Settings -->
+
+        <div class="settings-card">
+
+            <h3>Profile</h3>
+
+            <div class="form-group">
+
+                <label for="adminName">
+
+                    Full Name
+
+                </label>
+
+                <input
+                    type="text"
+                    id="adminName"
+                    value="Admin"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="adminEmail">
+
+                    Email
+
+                </label>
+
+                <input
+                    type="email"
+                    id="adminEmail"
+                    value="admin@careerforge.ai"
+                >
+
+            </div>
+
+            <button id="updateProfileBtn">
+
+                Update Profile
+
+            </button>
+
+        </div>
+
+        <!-- Security Settings -->
+
+        <div class="settings-card">
+
+            <h3>Security</h3>
+
+            <div class="form-group">
+
+                <label for="currentPassword">
+
+                    Current Password
+
+                </label>
+
+                <input
+                    type="password"
+                    id="currentPassword"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="newPassword">
+
+                    New Password
+
+                </label>
+
+                <input
+                    type="password"
+                    id="newPassword"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="confirmPassword">
+
+                    Confirm Password
+
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                >
+
+            </div>
+
+            <button id="changePasswordBtn">
+
+                Change Password
+
+            </button>
+
+        </div>
+
+        <!-- Roles -->
+
+        <div class="settings-card">
+
+            <h3>Roles</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Role</th>
+
+                        <th>Permissions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="roleTableBody">
+
+                    <tr>
+
+                        <td>Super Admin</td>
+
+                        <td>Full Access</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>HR Admin</td>
+
+                        <td>Users, Companies, Jobs</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Content Admin</td>
+
+                        <td>Courses, Skills</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Backup -->
+
+        <div class="settings-card">
+
+            <h3>Backup</h3>
+
+            <p>
+
+                Create or restore platform backups.
+
+            </p>
+
+            <button id="backupNowBtn">
+
+                Backup Now
+
+            </button>
+
+            <button id="restoreBackupBtn">
+
+                Restore Backup
+
+            </button>
+
+        </div>
+
+        <!-- System Configuration -->
+
+        <div class="settings-card">
+
+            <h3>System Configuration</h3>
+
+            <div class="form-group">
+
+                <label for="siteName">
+
+                    Website Name
+
+                </label>
+
+                <input
+                    type="text"
+                    id="siteName"
+                    value="CareerForge AI"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="supportEmail">
+
+                    Support Email
+
+                </label>
+
+                <input
+                    type="email"
+                    id="supportEmail"
+                    value="support@careerforge.ai"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="maintenanceMode">
+
+                    Maintenance Mode
+
+                </label>
+
+                <input
+                    type="checkbox"
+                    id="maintenanceMode"
+                >
+
+            </div>
+
+            <button id="saveSettingsBtn">
+
+                Save Configuration
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Settings End -->
+    <!-- ========================= -->
+    <!-- Activity Logs Start -->
+    <!-- ========================= -->
+
+    <section id="activityLogs">
+
+        <div class="section-header">
+
+            <h2>Activity Logs</h2>
+
+            <p>
+                Monitor login history, user activities, admin actions, deleted records, and system audit logs.
+            </p>
+
+        </div>
+
+        <!-- Search & Filter -->
+
+        <div class="activity-toolbar">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchActivity"
+                    placeholder="Search Activity..."
+                >
+
+                <button id="searchActivityBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <select id="activityFilter">
+
+                <option value="">All Activities</option>
+
+                <option value="login">Login History</option>
+
+                <option value="user">User Activities</option>
+
+                <option value="admin">Admin Activities</option>
+
+                <option value="deleted">Deleted Records</option>
+
+                <option value="audit">Audit Logs</option>
+
+            </select>
+
+        </div>
+
+        <!-- Login History -->
+
+        <div class="table-container">
+
+            <h3>Login History</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>User</th>
+
+                        <th>Role</th>
+
+                        <th>Login Time</th>
+
+                        <th>IP Address</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="loginHistoryTable">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>Abhay Kumar</td>
+
+                        <td>Student</td>
+
+                        <td>28 Jul 2026 10:15 AM</td>
+
+                        <td>192.168.1.10</td>
+
+                        <td>
+
+                            <span class="status success">
+
+                                Success
+
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- User Activities -->
+
+        <div class="table-container">
+
+            <h3>User Activities</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>User</th>
+
+                        <th>Activity</th>
+
+                        <th>Module</th>
+
+                        <th>Date & Time</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="userActivityTable">
+
+                    <tr>
+
+                        <td>Abhay Kumar</td>
+
+                        <td>Uploaded Resume</td>
+
+                        <td>Resume Analysis</td>
+
+                        <td>28 Jul 2026 10:30 AM</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Admin Activities -->
+
+        <div class="table-container">
+
+            <h3>Admin Activities</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Admin</th>
+
+                        <th>Action</th>
+
+                        <th>Module</th>
+
+                        <th>Date & Time</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="adminActivityTable">
+
+                    <tr>
+
+                        <td>Admin</td>
+
+                        <td>Verified Certificate</td>
+
+                        <td>Certificate Verification</td>
+
+                        <td>28 Jul 2026 11:00 AM</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Deleted Records -->
+
+        <div class="table-container">
+
+            <h3>Deleted Records</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Record ID</th>
+
+                        <th>Module</th>
+
+                        <th>Deleted By</th>
+
+                        <th>Date</th>
+
+                        <th>Reason</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="deletedRecordTable">
+
+                    <tr>
+
+                        <td>102</td>
+
+                        <td>Job Management</td>
+
+                        <td>Admin</td>
+
+                        <td>28 Jul 2026</td>
+
+                        <td>Expired Job Posting</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Audit Logs -->
+
+        <div class="table-container">
+
+            <h3>Audit Logs</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Event</th>
+
+                        <th>Performed By</th>
+
+                        <th>Module</th>
+
+                        <th>Date & Time</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="auditLogTable">
+
+                    <tr>
+
+                        <td>501</td>
+
+                        <td>Updated Company Details</td>
+
+                        <td>Super Admin</td>
+
+                        <td>Company Management</td>
+
+                        <td>28 Jul 2026 11:45 AM</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Activity Logs End -->
 </body>
 </html>
