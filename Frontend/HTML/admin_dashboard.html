@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Admin Dashboard | CareerForge AI</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/images/favicon.png"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+        rel="stylesheet"
+        href="admin.css"
+    >
+</head>
+<body>
+    <!-- ========================= -->
+    <!-- Sidebar Start -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+
+        <div class="sidebar-logo">
+
+            <img
+                src="assets/images/logo.png"
+                alt="CareerForge AI Logo"
+            >
+
+            <h2>CareerForge AI</h2>
+
+            <p>Admin Panel</p>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="sidebar-menu">
+
+            <ul>
+
+                <!-- Dashboard -->
+
+                <li>
+
+                    <a href="#dashboard">
+
+                        <i class="fa-solid fa-house"></i>
+
+                        <span>Dashboard</span>
+
+                    </a>
+
+                </li>
+
+                <!-- User Management -->
+
+                <li>
+
+                    <a href="#users">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <span>User Management</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Admin Management -->
+
+                <li>
+
+                    <a href="#admins">
+
+                        <i class="fa-solid fa-user-shield"></i>
+
+                        <span>Admin Management</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Resume Management -->
+
+                <li>
+
+                    <a href="#resumes">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>Resume Management</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Company Management -->
+
+                <li>
+
+                    <a href="#companies">
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <span>Company Management</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Job Management -->
+
+                <li>
+
+                    <a href="#jobs">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <span>Job Management</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Skill Management -->
+
+                <li>
+
+                    <a href="#skills">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <span>Skill Management</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Course Management -->
+
+                <li>
+
+                    <a href="#courses">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span>Course Management</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Certificate Verification -->
+
+                <li>
+
+                    <a href="#certificates">
+
+                        <i class="fa-solid fa-certificate"></i>
+
+                        <span>Certificate Verification</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Reports & Analytics -->
+
+                <li>
+
+                    <a href="#reports">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        <span>Reports & Analytics</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Notifications -->
+
+                <li>
+
+                    <a href="#notifications">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                        <span>Notifications</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Feedback -->
+
+                <li>
+
+                    <a href="#feedback">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>Feedback</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Settings -->
+
+                <li>
+
+                    <a href="#settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                        <span>Settings</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Activity Logs -->
+
+                <li>
+
+                    <a href="#activityLogs">
+
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+
+                        <span>Activity Logs</span>
+
+                    </a>
+
+                </li>
+
+                <!-- Logout -->
+
+                <li>
+
+                    <a href="login.html">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <!-- ========================= -->
+    <!-- Sidebar End -->
+     <!-- ========================= -->
+    <!-- Top Navbar Start -->
+    <!-- ========================= -->
+
+    <header class="top-navbar">
+
+        <!-- Left Side -->
+
+        <div class="navbar-left">
+
+            <h1 class="dashboard-title">
+
+                Admin Dashboard
+
+            </h1>
+
+        </div>
+
+        <!-- Center -->
+
+        <div class="navbar-center">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="globalSearch"
+                    placeholder="Search users, companies, jobs..."
+                >
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="navbar-right">
+
+            <!-- Notification -->
+
+            <div class="notification-box">
+
+                <i
+                    class="fa-solid fa-bell"
+                    id="notificationBell"
+                ></i>
+
+                <span id="notificationCount">
+
+                    5
+
+                </span>
+
+            </div>
+
+            <!-- Dark Mode -->
+
+            <div class="theme-box">
+
+                <i class="fa-solid fa-moon"></i>
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="darkModeToggle"
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <!-- Admin Profile -->
+
+            <div class="admin-profile">
+
+                <img
+                    src="assets/images/admin.png"
+                    alt="Admin"
+                    id="adminImage"
+                >
+
+                <div class="admin-info">
+
+                    <h4 id="adminName">
+
+                        Admin
+
+                    </h4>
+
+                    <span>
+
+                        Super Admin
+
+                    </span>
+
+                </div>
+
+                <i
+                    class="fa-solid fa-chevron-down"
+                    id="profileDropdownBtn"
+                ></i>
+
+                <!-- Dropdown -->
+
+                <div
+                    class="profile-dropdown"
+                    id="profileDropdown"
+                >
+
+                    <ul>
+
+                        <li>
+
+                            <a href="#profile">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                My Profile
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#settings">
+
+                                <i class="fa-solid fa-gear"></i>
+
+                                Settings
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#activityLogs">
+
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                                Activity Logs
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="login.html">
+
+                                <i class="fa-solid fa-right-from-bracket"></i>
+
+                                Logout
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- Top Navbar End -->
+     <!-- ========================= -->
+    <!-- Dashboard Overview Start -->
+    <!-- ========================= -->
+
+    <section id="dashboardOverview">
+
+        <div class="section-header">
+
+            <h2>Dashboard Overview</h2>
+
+            <p>
+                Monitor the overall performance and statistics of CareerForge AI.
+            </p>
+
+        </div>
+
+        <div class="overview-container">
+
+            <!-- Total Users -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <div class="overview-content">
+
+                    <h3>Total Users</h3>
+
+                    <h2 id="totalUsers">
+
+                        1,250
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <!-- Active Users -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+
+                    <i class="fa-solid fa-user-check"></i>
+
+                </div>
+
+                <div class="overview-content">
+
+                    <h3>Active Users</h3>
+
+                    <h2 id="activeUsers">
+
+                        980
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <!-- Total Companies -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+
+                    <i class="fa-solid fa-building"></i>
+
+                </div>
+
+                <div class="overview-content">
+
+                    <h3>Total Companies</h3>
+
+                    <h2 id="totalCompanies">
+
+                        85
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <!-- Total Resumes -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                </div>
+
+                <div class="overview-content">
+
+                    <h3>Total Resumes</h3>
+
+                    <h2 id="totalResumes">
+
+                        1,120
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <!-- Total Jobs -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                </div>
+
+                <div class="overview-content">
+
+                    <h3>Total Jobs</h3>
+
+                    <h2 id="totalJobs">
+
+                        240
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <!-- Total Certificates -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                </div>
+
+                <div class="overview-content">
+
+                    <h3>Total Certificates</h3>
+
+                    <h2 id="totalCertificates">
+
+                        860
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <!-- Total Interviews -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+
+                    <i class="fa-solid fa-user-tie"></i>
+
+                </div>
+
+                <div class="overview-content">
+
+                    <h3>Total Interviews</h3>
+
+                    <h2 id="totalInterviews">
+
+                        420
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <!-- Total Placements -->
+
+            <div class="overview-card">
+
+                <div class="overview-icon">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                </div>
+
+                <div class="overview-content">
+
+                    <h3>Total Placements</h3>
+
+                    <h2 id="totalPlacements">
+
+                        215
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Dashboard Overview End -->
+</body>
+</html>
