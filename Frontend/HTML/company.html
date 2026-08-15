@@ -1,37 +1,2534 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- ================= Meta Tags ================= -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Preparation</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- ================= Title ================= -->
+
+    <title>Companies | CareerForge AI</title>
+
+    <!-- ================= Favicon ================= -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/images/favicon.png"
+    >
+
+    <!-- ================= Google Fonts ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- ================= Font Awesome ================= -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- ================= CSS ================= -->
+
+    <link
+        rel="stylesheet"
+        href="companies.css"
+    >
+
 </head>
+
 <body>
+    <!-- ================================================= -->
+    <!--                 Main Content Start                -->
+    <!-- ================================================= -->
 
-    <h1>Company Preparation</h1>
+    <main class="main-content">
 
-    <select id="companySelect">
+        <!-- ================= Page Header ================= -->
 
-        <option value="google">Google</option>
+        <section class="company-page-header">
 
-        <option value="amazon">Amazon</option>
+            <div class="header-content">
 
-        <option value="microsoft">Microsoft</option>
+                <h1>Explore Companies</h1>
 
-        <option value="infosys">Infosys</option>
+                <p>
+                    Discover companies, understand their hiring process,
+                    required skills, and prepare for your dream placement.
+                </p>
 
-        <option value="tcs">TCS</option>
+            </div>
 
-    </select>
+        </section>
 
-    <button id="showBtn">
-        Show Details
-    </button>
 
-    <div id="companyDetails"></div>
+        <!-- ================= Search Company ================= -->
 
-    <script src="company.js"></script>
+        <section class="company-search-section">
 
+            <div class="search-company-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchCompany"
+                    placeholder="Search company..."
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Filter Companies ================= -->
+
+        <section class="company-filter-section">
+
+            <div class="filter-group">
+
+                <label for="companyCategory">
+                    Category
+                </label>
+
+                <select id="companyCategory">
+
+                    <option value="">All Categories</option>
+
+                    <option value="product">
+                        Product Based
+                    </option>
+
+                    <option value="service">
+                        Service Based
+                    </option>
+
+                    <option value="startup">
+                        Startup
+                    </option>
+
+                    <option value="mnc">
+                        MNC
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label for="companyLocation">
+                    Location
+                </label>
+
+                <select id="companyLocation">
+
+                    <option value="">All Locations</option>
+
+                    <option value="bangalore">
+                        Bangalore
+                    </option>
+
+                    <option value="hyderabad">
+                        Hyderabad
+                    </option>
+
+                    <option value="pune">
+                        Pune
+                    </option>
+
+                    <option value="delhi">
+                        Delhi
+                    </option>
+
+                    <option value="mumbai">
+                        Mumbai
+                    </option>
+
+                    <option value="remote">
+                        Remote
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label for="companyDifficulty">
+                    Difficulty
+                </label>
+
+                <select id="companyDifficulty">
+
+                    <option value="">
+                        All Levels
+                    </option>
+
+                    <option value="easy">
+                        Easy
+                    </option>
+
+                    <option value="medium">
+                        Medium
+                    </option>
+
+                    <option value="hard">
+                        Hard
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                id="applyFilterBtn"
+                class="filter-btn"
+            >
+
+                <i class="fa-solid fa-filter"></i>
+
+                Apply Filter
+
+            </button>
+
+        </section>
+
+
+        <!-- ================= Featured Companies ================= -->
+
+        <section class="featured-companies">
+
+            <div class="section-title">
+
+                <h2>Featured Companies</h2>
+
+                <p>
+                    Popular companies hiring software professionals.
+                </p>
+
+            </div>
+
+
+            <div class="featured-company-list">
+
+                <div class="featured-company-card">
+
+                    <div class="company-logo">
+
+                        <img
+                            src="assets/company/google.png"
+                            alt="Google"
+                        >
+
+                    </div>
+
+                    <h3>Google</h3>
+
+                    <p>Technology</p>
+
+                    <button class="view-company-btn">
+                        View Company
+                    </button>
+
+                </div>
+
+
+                <div class="featured-company-card">
+
+                    <div class="company-logo">
+
+                        <img
+                            src="assets/company/microsoft.png"
+                            alt="Microsoft"
+                        >
+
+                    </div>
+
+                    <h3>Microsoft</h3>
+
+                    <p>Technology</p>
+
+                    <button class="view-company-btn">
+                        View Company
+                    </button>
+
+                </div>
+
+
+                <div class="featured-company-card">
+
+                    <div class="company-logo">
+
+                        <img
+                            src="assets/company/amazon.png"
+                            alt="Amazon"
+                        >
+
+                    </div>
+
+                    <h3>Amazon</h3>
+
+                    <p>E-Commerce & Technology</p>
+
+                    <button class="view-company-btn">
+                        View Company
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Company Cards ================= -->
+
+        <section class="company-list-section">
+
+            <div class="section-title">
+
+                <h2>Companies</h2>
+
+                <p>
+                    Explore companies and their placement opportunities.
+                </p>
+
+            </div>
+
+
+            <div
+                class="company-grid"
+                id="companyGrid"
+            >
+
+                <!-- Company Card -->
+
+                <div
+                    class="company-card"
+                    data-category="product"
+                >
+
+                    <div class="company-card-header">
+
+                        <img
+                            src="assets/company/google.png"
+                            alt="Google"
+                        >
+
+                        <button
+                            class="favorite-btn"
+                            title="Save Company"
+                        >
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <h3>Google</h3>
+
+                    <p class="company-type">
+                        Product Based
+                    </p>
+
+                    <p class="company-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Bangalore / Hyderabad
+
+                    </p>
+
+
+                    <div class="company-tags">
+
+                        <span>Software</span>
+
+                        <span>Cloud</span>
+
+                        <span>AI</span>
+
+                    </div>
+
+
+                    <button class="company-details-btn">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+
+                <!-- Company Card -->
+
+                <div
+                    class="company-card"
+                    data-category="product"
+                >
+
+                    <div class="company-card-header">
+
+                        <img
+                            src="assets/company/microsoft.png"
+                            alt="Microsoft"
+                        >
+
+                        <button
+                            class="favorite-btn"
+                            title="Save Company"
+                        >
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <h3>Microsoft</h3>
+
+                    <p class="company-type">
+                        Product Based
+                    </p>
+
+                    <p class="company-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Hyderabad / Bangalore
+
+                    </p>
+
+
+                    <div class="company-tags">
+
+                        <span>Azure</span>
+
+                        <span>Software</span>
+
+                        <span>AI</span>
+
+                    </div>
+
+
+                    <button class="company-details-btn">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+
+                <!-- Company Card -->
+
+                <div
+                    class="company-card"
+                    data-category="service"
+                >
+
+                    <div class="company-card-header">
+
+                        <img
+                            src="assets/company/tcs.png"
+                            alt="TCS"
+                        >
+
+                        <button
+                            class="favorite-btn"
+                            title="Save Company"
+                        >
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <h3>TCS</h3>
+
+                    <p class="company-type">
+                        Service Based
+                    </p>
+
+                    <p class="company-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Multiple Locations
+
+                    </p>
+
+
+                    <div class="company-tags">
+
+                        <span>Java</span>
+
+                        <span>SQL</span>
+
+                        <span>Cloud</span>
+
+                    </div>
+
+
+                    <button class="company-details-btn">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Company Details ================= -->
+
+        <section
+            class="company-details-section"
+            id="companyDetails"
+        >
+
+            <div class="section-title">
+
+                <h2>Company Details</h2>
+
+            </div>
+
+
+            <div class="company-details-container">
+
+                <div class="company-overview">
+
+                    <h3 id="selectedCompanyName">
+                        Select a company
+                    </h3>
+
+                    <p id="companyDescription">
+                        Select a company to view detailed information.
+                    </p>
+
+                </div>
+
+
+                <div class="company-info-grid">
+
+                    <div class="company-info-item">
+
+                        <h4>Industry</h4>
+
+                        <p id="companyIndustry">
+                            -
+                        </p>
+
+                    </div>
+
+
+                    <div class="company-info-item">
+
+                        <h4>Company Type</h4>
+
+                        <p id="companyType">
+                            -
+                        </p>
+
+                    </div>
+
+
+                    <div class="company-info-item">
+
+                        <h4>Location</h4>
+
+                        <p id="companyLocation">
+                            -
+                        </p>
+
+                    </div>
+
+
+                    <div class="company-info-item">
+
+                        <h4>Company Size</h4>
+
+                        <p id="companySize">
+                            -
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Interview Process ================= -->
+
+        <section class="interview-process-section">
+
+            <div class="section-title">
+
+                <h2>Interview Process</h2>
+
+                <p>
+                    Understand the typical hiring rounds.
+                </p>
+
+            </div>
+
+
+            <div class="interview-rounds">
+
+                <div class="interview-round">
+
+                    <span class="round-number">
+                        01
+                    </span>
+
+                    <h3>Online Assessment</h3>
+
+                    <p>
+                        Aptitude, coding, and technical assessment.
+                    </p>
+
+                </div>
+
+
+                <div class="interview-round">
+
+                    <span class="round-number">
+                        02
+                    </span>
+
+                    <h3>Technical Interview</h3>
+
+                    <p>
+                        DSA, programming, CS fundamentals, and projects.
+                    </p>
+
+                </div>
+
+
+                <div class="interview-round">
+
+                    <span class="round-number">
+                        03
+                    </span>
+
+                    <h3>HR Interview</h3>
+
+                    <p>
+                        Communication, behavioral questions, and career goals.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Hiring Timeline ================= -->
+
+        <section class="hiring-timeline-section">
+
+            <div class="section-title">
+
+                <h2>Hiring Timeline</h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>Application</h3>
+
+                    <p>
+                        Submit your application.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>Assessment</h3>
+
+                    <p>
+                        Complete the online assessment.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>Interview</h3>
+
+                    <p>
+                        Attend technical and HR rounds.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        04
+                    </span>
+
+                    <h3>Offer</h3>
+
+                    <p>
+                        Receive the final selection decision.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Required Skills ================= -->
+
+        <section class="required-skills-section">
+
+            <div class="section-title">
+
+                <h2>Required Skills</h2>
+
+            </div>
+
+
+            <div
+                class="required-skills-list"
+                id="requiredSkills"
+            >
+
+                <span>Java</span>
+
+                <span>Data Structures</span>
+
+                <span>Algorithms</span>
+
+                <span>SQL</span>
+
+                <span>Object-Oriented Programming</span>
+
+                <span>Problem Solving</span>
+
+                <span>Communication</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Preparation Resources ================= -->
+
+        <section class="preparation-resources-section">
+
+            <div class="section-title">
+
+                <h2>Preparation Resources</h2>
+
+                <p>
+                    Resources to help you prepare for company placements.
+                </p>
+
+            </div>
+
+
+            <div class="resource-grid">
+
+                <div class="resource-card">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <h3>DSA Preparation</h3>
+
+                    <p>
+                        Practice important coding problems and patterns.
+                    </p>
+
+                    <button>
+                        Start Learning
+                    </button>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <h3>Core CS</h3>
+
+                    <p>
+                        Prepare DBMS, OS, CN, and OOP concepts.
+                    </p>
+
+                    <button>
+                        Start Learning
+                    </button>
+
+                </div>
+
+
+                <div class="resource-card">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <h3>Interview Practice</h3>
+
+                    <p>
+                        Practice technical and HR interview questions.
+                    </p>
+
+                    <button>
+                        Start Practice
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Company Comparison ================= -->
+
+        <section class="company-comparison-section">
+
+            <div class="section-title">
+
+                <h2>Company Comparison</h2>
+
+                <p>
+                    Compare companies before choosing your target.
+                </p>
+
+            </div>
+
+
+            <div class="comparison-container">
+
+                <div class="comparison-select">
+
+                    <label for="companyA">
+                        Company A
+                    </label>
+
+                    <select id="companyA">
+
+                        <option value="">
+                            Select Company
+                        </option>
+
+                        <option>Google</option>
+
+                        <option>Microsoft</option>
+
+                        <option>Amazon</option>
+
+                        <option>TCS</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="comparison-select">
+
+                    <label for="companyB">
+                        Company B
+                    </label>
+
+                    <select id="companyB">
+
+                        <option value="">
+                            Select Company
+                        </option>
+
+                        <option>Google</option>
+
+                        <option>Microsoft</option>
+
+                        <option>Amazon</option>
+
+                        <option>TCS</option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    id="compareCompaniesBtn"
+                    class="compare-btn"
+                >
+
+                    <i class="fa-solid fa-scale-balanced"></i>
+
+                    Compare
+
+                </button>
+
+            </div>
+
+
+            <div
+                class="comparison-result"
+                id="comparisonResult"
+            >
+
+                <!-- Comparison data will appear here -->
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Placement Statistics ================= -->
+
+        <section class="placement-statistics-section">
+
+            <div class="section-title">
+
+                <h2>Placement Statistics</h2>
+
+            </div>
+
+
+            <div class="placement-stats-grid">
+
+                <div class="placement-stat-card">
+
+                    <h3>Average Package</h3>
+
+                    <p id="averagePackage">
+                        -
+                    </p>
+
+                </div>
+
+
+                <div class="placement-stat-card">
+
+                    <h3>Highest Package</h3>
+
+                    <p id="highestPackage">
+                        -
+                    </p>
+
+                </div>
+
+
+                <div class="placement-stat-card">
+
+                    <h3>Placement Rate</h3>
+
+                    <p id="placementRate">
+                        -
+                    </p>
+
+                </div>
+
+
+                <div class="placement-stat-card">
+
+                    <h3>Students Placed</h3>
+
+                    <p id="studentsPlaced">
+                        -
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Save Favorite Companies ================= -->
+
+        <section class="favorite-companies-section">
+
+            <div class="section-title">
+
+                <h2>Favorite Companies</h2>
+
+                <p>
+                    Save companies that you want to prepare for.
+                </p>
+
+            </div>
+
+
+            <div
+                class="favorite-company-list"
+                id="favoriteCompanyList"
+            >
+
+                <p>
+                    No favorite companies saved yet.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= Apply / Official Website ================= -->
+
+        <section class="company-application-section">
+
+            <div class="section-title">
+
+                <h2>Ready to Apply?</h2>
+
+                <p>
+                    Visit the official company website to explore current
+                    job and internship opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="company-application-actions">
+
+                <button
+                    id="applyCompanyBtn"
+                    class="apply-btn"
+                >
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    Apply Now
+
+                </button>
+
+
+                <button
+                    id="officialWebsiteBtn"
+                    class="website-btn"
+                >
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    Visit Official Website
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================================================= -->
+    <!--                  Main Content End                  -->
+    <!-- ================================================= -->
+    
+    <!-- ========================================= -->
+    <!--            Page Header Start              -->
+    <!-- ========================================= -->
+
+    <section class="company-page-header">
+
+        <div class="page-header-content">
+
+            <!-- Title -->
+
+            <h1>
+                Explore Companies
+            </h1>
+
+            <!-- Description -->
+
+            <p>
+                Discover top companies, explore their hiring process,
+                required skills, interview patterns, and placement
+                opportunities to prepare for your dream career.
+            </p>
+
+            <!-- Total Companies -->
+
+            <div class="total-companies">
+
+                <i class="fa-solid fa-building"></i>
+
+                <div>
+
+                    <span>
+                        Total Companies
+                    </span>
+
+                    <strong id="totalCompanies">
+                        50+
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!--             Page Header End               -->
+    <!-- ========================================= -->
+
+    <!-- ========================================= -->
+    <!--          Search & Filter Start            -->
+    <!-- ========================================= -->
+
+    <section class="company-search-filter">
+
+        <div class="filter-header">
+
+            <h2>Search & Filter Companies</h2>
+
+            <p>
+                Find companies based on package, location,
+                work mode, company type, and job role.
+            </p>
+
+        </div>
+
+
+        <div class="filter-container">
+
+            <!-- Search Box -->
+
+            <div class="filter-group search-group">
+
+                <label for="companySearchInput">
+
+                    Search Company
+
+                </label>
+
+                <div class="search-input-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="companySearchInput"
+                        placeholder="Search company name..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Company Type -->
+
+            <div class="filter-group">
+
+                <label for="companyTypeFilter">
+
+                    Company Type
+
+                </label>
+
+                <select id="companyTypeFilter">
+
+                    <option value="">
+                        All Types
+                    </option>
+
+                    <option value="product">
+                        Product Based
+                    </option>
+
+                    <option value="service">
+                        Service Based
+                    </option>
+
+                    <option value="startup">
+                        Startup
+                    </option>
+
+                    <option value="mnc">
+                        MNC
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Package Filter -->
+
+            <div class="filter-group">
+
+                <label for="packageFilter">
+
+                    Package
+
+                </label>
+
+                <select id="packageFilter">
+
+                    <option value="">
+                        All Packages
+                    </option>
+
+                    <option value="0-3">
+                        0 - 3 LPA
+                    </option>
+
+                    <option value="3-5">
+                        3 - 5 LPA
+                    </option>
+
+                    <option value="5-10">
+                        5 - 10 LPA
+                    </option>
+
+                    <option value="10-20">
+                        10 - 20 LPA
+                    </option>
+
+                    <option value="20+">
+                        20+ LPA
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Location Filter -->
+
+            <div class="filter-group">
+
+                <label for="locationFilter">
+
+                    Location
+
+                </label>
+
+                <select id="locationFilter">
+
+                    <option value="">
+                        All Locations
+                    </option>
+
+                    <option value="bangalore">
+                        Bangalore
+                    </option>
+
+                    <option value="hyderabad">
+                        Hyderabad
+                    </option>
+
+                    <option value="pune">
+                        Pune
+                    </option>
+
+                    <option value="mumbai">
+                        Mumbai
+                    </option>
+
+                    <option value="delhi">
+                        Delhi NCR
+                    </option>
+
+                    <option value="chennai">
+                        Chennai
+                    </option>
+
+                    <option value="gurgaon">
+                        Gurgaon
+                    </option>
+
+                    <option value="noida">
+                        Noida
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Work Mode -->
+
+            <div class="filter-group">
+
+                <label for="workModeFilter">
+
+                    Work Mode
+
+                </label>
+
+                <select id="workModeFilter">
+
+                    <option value="">
+                        All Work Modes
+                    </option>
+
+                    <option value="onsite">
+                        On-Site
+                    </option>
+
+                    <option value="hybrid">
+                        Hybrid
+                    </option>
+
+                    <option value="remote">
+                        Remote
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Job Role -->
+
+            <div class="filter-group">
+
+                <label for="jobRoleFilter">
+
+                    Job Role
+
+                </label>
+
+                <select id="jobRoleFilter">
+
+                    <option value="">
+                        All Roles
+                    </option>
+
+                    <option value="software-engineer">
+                        Software Engineer
+                    </option>
+
+                    <option value="frontend-developer">
+                        Frontend Developer
+                    </option>
+
+                    <option value="backend-developer">
+                        Backend Developer
+                    </option>
+
+                    <option value="full-stack">
+                        Full Stack Developer
+                    </option>
+
+                    <option value="data-analyst">
+                        Data Analyst
+                    </option>
+
+                    <option value="data-scientist">
+                        Data Scientist
+                    </option>
+
+                    <option value="cybersecurity">
+                        Cybersecurity
+                    </option>
+
+                    <option value="blockchain">
+                        Blockchain Developer
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Filter Actions -->
+
+            <div class="filter-actions">
+
+                <button
+                    type="button"
+                    id="applyCompanyFilterBtn"
+                    class="apply-filter-btn"
+                >
+
+                    <i class="fa-solid fa-filter"></i>
+
+                    Apply Filters
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="resetCompanyFilterBtn"
+                    class="reset-filter-btn"
+                >
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Reset Filter
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!--           Search & Filter End              -->
+    <!-- ========================================= -->
+    
+    <!-- ========================================= -->
+    <!--        Featured Companies Start           -->
+    <!-- ========================================= -->
+
+    <section class="featured-companies">
+
+        <div class="section-header">
+
+            <h2>Featured Companies</h2>
+
+            <p>
+                Explore top companies and discover their
+                placement and hiring opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="featured-company-grid">
+
+
+            <!-- Google -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/google.png"
+                        alt="Google"
+                    >
+
+                </div>
+
+                <h3>Google</h3>
+
+                <p>Technology</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Google"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- Microsoft -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/microsoft.png"
+                        alt="Microsoft"
+                    >
+
+                </div>
+
+                <h3>Microsoft</h3>
+
+                <p>Technology</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Microsoft"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- Amazon -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/amazon.png"
+                        alt="Amazon"
+                    >
+
+                </div>
+
+                <h3>Amazon</h3>
+
+                <p>E-Commerce & Technology</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Amazon"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- Adobe -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/adobe.png"
+                        alt="Adobe"
+                    >
+
+                </div>
+
+                <h3>Adobe</h3>
+
+                <p>Software & Technology</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Adobe"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- Atlassian -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/atlassian.png"
+                        alt="Atlassian"
+                    >
+
+                </div>
+
+                <h3>Atlassian</h3>
+
+                <p>Software</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Atlassian"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- Oracle -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/oracle.png"
+                        alt="Oracle"
+                    >
+
+                </div>
+
+                <h3>Oracle</h3>
+
+                <p>Cloud & Database</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Oracle"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- Salesforce -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/salesforce.png"
+                        alt="Salesforce"
+                    >
+
+                </div>
+
+                <h3>Salesforce</h3>
+
+                <p>Cloud & CRM</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Salesforce"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- Infosys -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/infosys.png"
+                        alt="Infosys"
+                    >
+
+                </div>
+
+                <h3>Infosys</h3>
+
+                <p>IT Services</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Infosys"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- TCS -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/tcs.png"
+                        alt="TCS"
+                    >
+
+                </div>
+
+                <h3>TCS</h3>
+
+                <p>IT Services</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="TCS"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- Accenture -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/accenture.png"
+                        alt="Accenture"
+                    >
+
+                </div>
+
+                <h3>Accenture</h3>
+
+                <p>Technology & Consulting</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Accenture"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+            <!-- Wipro -->
+
+            <div class="featured-company-card">
+
+                <div class="featured-company-logo">
+
+                    <img
+                        src="assets/company/wipro.png"
+                        alt="Wipro"
+                    >
+
+                </div>
+
+                <h3>Wipro</h3>
+
+                <p>IT Services</p>
+
+                <button
+                    class="view-company-btn"
+                    data-company="Wipro"
+                >
+
+                    View Company
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!--         Featured Companies End            -->
+    <!-- ========================================= -->
+    <!--             Company Card Start            -->
+    <!-- ========================================= -->
+
+    <div
+        class="company-card"
+        data-company="Google"
+        data-type="product"
+        data-package="20+"
+        data-location="Bangalore"
+        data-work-mode="hybrid"
+        data-role="software-engineer"
+    >
+
+        <!-- ================= Logo ================= -->
+
+        <div class="company-card-top">
+
+            <div class="company-logo">
+
+                <img
+                    src="assets/company/google.png"
+                    alt="Google Logo"
+                >
+
+            </div>
+
+
+            <!-- Save Company -->
+
+            <button
+                type="button"
+                class="save-company-btn"
+                title="Save Company"
+                data-company="Google"
+            >
+
+                <i class="fa-regular fa-heart"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- ================= Company Name ================= -->
+
+        <h3 class="company-name">
+
+            Google
+
+        </h3>
+
+
+        <!-- ================= Industry ================= -->
+
+        <p class="company-industry">
+
+            <i class="fa-solid fa-industry"></i>
+
+            Technology
+
+        </p>
+
+
+        <!-- ================= Package ================= -->
+
+        <div class="company-card-info">
+
+            <div class="info-item">
+
+                <span class="info-label">
+
+                    Package
+
+                </span>
+
+                <strong class="company-package">
+
+                    ₹20+ LPA
+
+                </strong>
+
+            </div>
+
+
+            <!-- ================= Location ================= -->
+
+            <div class="info-item">
+
+                <span class="info-label">
+
+                    Location
+
+                </span>
+
+                <strong class="company-location">
+
+                    Bangalore
+
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= Hiring Status ================= -->
+
+        <div class="company-status">
+
+            <span class="status-label">
+
+                Hiring Status
+
+            </span>
+
+            <span class="hiring-status active">
+
+                <i class="fa-solid fa-circle"></i>
+
+                Hiring
+
+            </span>
+
+        </div>
+
+
+        <!-- ================= Difficulty Level ================= -->
+
+        <div class="company-difficulty">
+
+            <span class="difficulty-label">
+
+                Difficulty
+
+            </span>
+
+            <span class="difficulty-level hard">
+
+                Hard
+
+            </span>
+
+        </div>
+
+
+        <!-- ================= Actions ================= -->
+
+        <div class="company-card-actions">
+
+            <!-- View Details -->
+
+            <button
+                type="button"
+                class="view-company-details-btn"
+                data-company="Google"
+            >
+
+                <i class="fa-solid fa-eye"></i>
+
+                View Details
+
+            </button>
+
+
+            <!-- Save Company -->
+
+            <button
+                type="button"
+                class="save-company-action-btn"
+                data-company="Google"
+            >
+
+                <i class="fa-regular fa-heart"></i>
+
+                Save
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!--              Company Card End              -->
+    <!-- ========================================= -->
+
+    <!-- ========================================= -->
+    <!--          Interview Process Start          -->
+    <!-- ========================================= -->
+
+    <section class="interview-process-section">
+
+        <div class="section-header">
+
+            <h2>Interview Process</h2>
+
+            <p>
+                Understand the typical hiring rounds and prepare
+                yourself for each stage of the interview.
+            </p>
+
+        </div>
+
+
+        <div class="interview-process-container">
+
+
+            <!-- ================= Online Assessment ================= -->
+
+            <div class="interview-step">
+
+                <div class="step-number">
+
+                    01
+
+                </div>
+
+                <div class="step-icon">
+
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                </div>
+
+                <div class="step-content">
+
+                    <h3>
+                        Online Assessment
+                    </h3>
+
+                    <p>
+                        Coding problems, aptitude, logical reasoning,
+                        and technical assessment depending on the company.
+                    </p>
+
+                    <span class="step-status">
+                        Assessment
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= Technical Round 1 ================= -->
+
+            <div class="interview-step">
+
+                <div class="step-number">
+
+                    02
+
+                </div>
+
+                <div class="step-icon">
+
+                    <i class="fa-solid fa-code"></i>
+
+                </div>
+
+                <div class="step-content">
+
+                    <h3>
+                        Technical Round 1
+                    </h3>
+
+                    <p>
+                        Questions related to Data Structures,
+                        Algorithms, programming, and problem solving.
+                    </p>
+
+                    <span class="step-status">
+                        Technical
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= Technical Round 2 ================= -->
+
+            <div class="interview-step">
+
+                <div class="step-number">
+
+                    03
+
+                </div>
+
+                <div class="step-icon">
+
+                    <i class="fa-solid fa-computer"></i>
+
+                </div>
+
+                <div class="step-content">
+
+                    <h3>
+                        Technical Round 2
+                    </h3>
+
+                    <p>
+                        Advanced technical questions covering projects,
+                        DBMS, OOP, Operating Systems, Computer Networks,
+                        and system-related concepts.
+                    </p>
+
+                    <span class="step-status">
+                        Technical
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= HR Round ================= -->
+
+            <div class="interview-step">
+
+                <div class="step-number">
+
+                    04
+
+                </div>
+
+                <div class="step-icon">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                </div>
+
+                <div class="step-content">
+
+                    <h3>
+                        HR Round
+                    </h3>
+
+                    <p>
+                        Behavioral questions, communication skills,
+                        career goals, strengths, weaknesses, and
+                        company-related questions.
+                    </p>
+
+                    <span class="step-status">
+                        HR
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= Final Result ================= -->
+
+            <div class="interview-step final-step">
+
+                <div class="step-number">
+
+                    05
+
+                </div>
+
+                <div class="step-icon">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+                <div class="step-content">
+
+                    <h3>
+                        Final Result
+                    </h3>
+
+                    <p>
+                        Receive the final selection result and
+                        placement offer from the company.
+                    </p>
+
+                    <span class="step-status">
+                        Result
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ================= Preparation Tips ================= -->
+
+        <div class="interview-preparation">
+
+            <div class="preparation-header">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <div>
+
+                    <h3>
+                        Preparation Tips
+                    </h3>
+
+                    <p>
+                        Prepare strategically for every interview stage.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="preparation-tips-grid">
+
+
+                <!-- Tip 1 -->
+
+                <div class="preparation-tip">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <h4>
+                        Practice DSA
+                    </h4>
+
+                    <p>
+                        Practice arrays, strings, linked lists,
+                        trees, graphs, sorting, and common coding patterns.
+                    </p>
+
+                </div>
+
+
+                <!-- Tip 2 -->
+
+                <div class="preparation-tip">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <h4>
+                        Learn Core CS
+                    </h4>
+
+                    <p>
+                        Strengthen DBMS, Operating Systems,
+                        Computer Networks, and OOP concepts.
+                    </p>
+
+                </div>
+
+
+                <!-- Tip 3 -->
+
+                <div class="preparation-tip">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <h4>
+                        Prepare Your Resume
+                    </h4>
+
+                    <p>
+                        Keep your resume ATS-friendly and
+                        highlight relevant projects and skills.
+                    </p>
+
+                </div>
+
+
+                <!-- Tip 4 -->
+
+                <div class="preparation-tip">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <h4>
+                        Practice Interviews
+                    </h4>
+
+                    <p>
+                        Practice technical and HR questions
+                        before attending the actual interview.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!--           Interview Process End            -->
+    <!-- ========================================= -->
+
+    <!-- ========================================= -->
+    <!--            Required Skills Start          -->
+    <!-- ========================================= -->
+
+    <section class="required-skills-section">
+
+        <div class="section-header">
+
+            <h2>Required Skills</h2>
+
+            <p>
+                Build the technical and professional skills commonly
+                required for company placement and interview preparation.
+            </p>
+
+        </div>
+
+
+        <div class="required-skills-container">
+
+            <!-- DSA -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-code"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>DSA</h3>
+
+                    <p>
+                        Data Structures and Algorithms
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Java -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-brands fa-java"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>Java</h3>
+
+                    <p>
+                        Java Programming
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Python -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-brands fa-python"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>Python</h3>
+
+                    <p>
+                        Python Programming
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SQL -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-database"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>SQL</h3>
+
+                    <p>
+                        Structured Query Language
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DBMS -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-server"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>DBMS</h3>
+
+                    <p>
+                        Database Management Systems
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Operating System -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-desktop"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>Operating System</h3>
+
+                    <p>
+                        Operating Systems Fundamentals
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Computer Networks -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-network-wired"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>Computer Networks</h3>
+
+                    <p>
+                        Networking Fundamentals
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- OOP -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-cubes"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>OOP</h3>
+
+                    <p>
+                        Object-Oriented Programming
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Aptitude -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-calculator"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>Aptitude</h3>
+
+                    <p>
+                        Quantitative and Logical Aptitude
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Communication Skills -->
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                </div>
+
+                <div class="skill-content">
+
+                    <h3>Communication Skills</h3>
+
+                    <p>
+                        Verbal and Professional Communication
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!--             Required Skills End           -->
+    <!-- ========================================= -->
 </body>
+
 </html>
